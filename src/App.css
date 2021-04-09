@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    height: 100%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "header"
+    "body"
+    "footer";
+    min-height: 100vh;
+}
+
+.header{
+    grid-area: header;
+    border: red solid;
+}
+
+.body{
+    grid-area: body;
+    border: green solid;
+
+}
+
+.footer{
+    grid-area: footer;
+    border: blue solid;
+}
