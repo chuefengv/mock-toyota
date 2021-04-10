@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    height: 100%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header"
+    "hero"
+    "body-cars"
+    "body-info"
+    "footer";
+    min-height: 100vh;
+}
+
+.header{
+    grid-area: header;
+}
+
+.hero{
+    grid-area: hero;
+    border: solid purple;
+}
+.body-cars{
+    grid-area: body-cars;
+    border: green solid;
+
+}
+
+.body-info{
+    grid-area: body-info;
+    border: black solid;
+
+}
+
+.footer{
+    grid-area: footer;
+    border: blue solid;
+}

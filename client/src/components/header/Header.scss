@@ -1,0 +1,47 @@
+$red : rgb(235, 10, 30);
+
+.header-wrapper{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 5px auto 5px;
+
+    .header-logo{
+        background-color: $red;
+        grid-row: 2/3;
+        display: flex;
+        padding: 6px;
+        margin: 8px 10px 8px 10px;
+
+        img{
+            justify-self: center;
+            align-self: center;
+        }
+    }
+
+    .header-nav{
+        grid-row: 2/3;
+        justify-self: end;
+        align-self: center;
+
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: auto auto;
+        padding: 0 8px 0 8px;
+
+        .header-nav-location{
+            display: grid;
+            padding-right: 10px;
+            img{
+                justify-self: center;
+                align-self: center;
+            }
+            
+            p{
+                grid-row: 2/3;
+                margin: 0;
+                font-size: .7em;
+            }
+        }
+    }
+    
+}

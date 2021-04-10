@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto 1fr 1fr 1fr 1fr;
+      grid-template-areas: "header" "hero" "body-cars" "body-info" "footer";
+  min-height: 100vh;
+}
+
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+}
+
+.hero {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: hero;
+  border: solid purple;
+}
+
+.body-cars {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: body-cars;
+  border: green solid;
+}
+
+.body-info {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: body-info;
+  border: black solid;
+}
+
+.footer {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  border: blue solid;
+}
+/*# sourceMappingURL=App.css.map */
