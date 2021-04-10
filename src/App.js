@@ -1,5 +1,5 @@
 import './App.css';
-import {Header, Body, Footer} from './components/index';
+import {Header, BodyCars, BodyInfo, Hero, Footer} from './components/index';
 
 function App() {
   return (
@@ -9,8 +9,16 @@ function App() {
         <Header />
       </div>
 
-      <div className='body'>
-        <Body />
+      <div className='hero'>
+        <Hero />
+      </div>
+
+      <div className='body-cars'>
+        <BodyCars />
+      </div>
+
+      <div className='body-info'>
+        <BodyInfo />
       </div>
 
       <div className='footer'>
