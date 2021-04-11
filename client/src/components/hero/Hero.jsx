@@ -1,5 +1,6 @@
 import React from 'react';
 import './Hero.css';
+import Slider from './slider/Slider';
 import {one, two, three, four, five} from '../../assets/hero-image/index';
 function Hero(){
     return(
@@ -9,6 +10,7 @@ function Hero(){
             </div>
             <div>
                 INFORMATION HERE
+                <Slider />
             </div>
         </div>
     )
