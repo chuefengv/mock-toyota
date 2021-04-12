@@ -2,15 +2,32 @@ $red : rgb(235, 10, 30);
 
 .header-wrapper{
     display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 5px auto 5px;
+    grid-template-columns: auto auto 1fr;
+    grid-template-rows: 10px 40px 10px;
 
     .header-logo{
-        background-color: $red;
         grid-row: 2/3;
-        display: flex;
-        padding: 6px;
-        margin: 8px 10px 8px 10px;
+        display: grid;
+        border-right: black thin solid;
+                
+        .header-logo-box{
+            align-self: center;
+            padding: 6px;
+            margin: 0 10px 0 10px;
+            background-color: $red;
+            display: grid;
+            img{
+                justify-self: center;
+                align-self: center;
+            }
+        }
+    }
+
+    .header-olympics{
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 10px 0 10px;
 
         img{
             justify-self: center;
@@ -43,4 +60,5 @@ $red : rgb(235, 10, 30);
             }
         }
     }
+
 }

@@ -1,5 +1,6 @@
 import React ,{useState} from 'react';
 import './Hero.css';
+import Indicator from './indicator/Indicator';
 import {one, two, three, four, five} from '../../assets/hero-image/index';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
@@ -95,40 +96,20 @@ function Hero(){
                         </div>
                     </div>
                 </Carousel>
-            </div>
-            <div className='hero-arrows-left' onClick={()=>prev()}>
+
+                <div className='hero-arrows-left' onClick={()=>prev()}>
                     <FontAwesomeIcon icon={faChevronLeft} ></FontAwesomeIcon>
-            </div>
+                </div>
 
 
-            <div className='hero-arrows-right' onClick={()=>next()}>
+                <div className='hero-arrows-right' onClick={()=>next()}>
                     <FontAwesomeIcon icon={faChevronRight} ></FontAwesomeIcon>
+                </div>
             </div>
-            <div className='header-indicators'>
-                <div className='bubble'>
-                    {index===0 && <div className='header-indicator-selected'></div>}
-                    {index!==0 && <div className='header-indicator-unselected' onClick={()=>setIndex(0)}></div>}
-                </div>
 
-                <div className='bubble'>
-                    {index===1 && <div className='header-indicator-selected'></div>}
-                    {index!==1 && <div className='header-indicator-unselected' onClick={()=>setIndex(1)}></div>}
-                </div>
-                
-                <div className='bubble'>
-                    {index===2 && <div className='header-indicator-selected'></div>}
-                    {index!==2 && <div className='header-indicator-unselected' onClick={()=>setIndex(2)}></div>}
-                </div>
 
-                <div className='bubble'>
-                    {index===3 && <div className='header-indicator-selected'></div>}
-                    {index!==3 && <div className='header-indicator-unselected' onClick={()=>setIndex(3)}></div>}
-                </div>
-
-                <div className='bubble'>
-                    {index===4 && <div className='header-indicator-selected'></div>}
-                    {index!==4 && <div className='header-indicator-unselected' onClick={()=>setIndex(4)}></div>}
-                </div>
+            <div className='header-bottom'>
+                <Indicator index={index} setIndex={setIndex} />
             </div>
 
         </div>

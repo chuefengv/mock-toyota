@@ -92,4 +92,11 @@
   border-radius: 50%;
   border: solid #0099ff 2px;
 }
+
+.hero-wrapper .header-bottom {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+}
 /*# sourceMappingURL=Hero.css.map */

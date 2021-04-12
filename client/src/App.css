@@ -30,20 +30,17 @@ body {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: body-cars;
-  border: green solid;
 }
 
 .body-info {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: body-info;
-  border: black solid;
 }
 
 .footer {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: footer;
-  border: blue solid;
 }
 /*# sourceMappingURL=App.css.map */
