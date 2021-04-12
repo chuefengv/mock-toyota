@@ -35,12 +35,16 @@ function Hero(){
                             <img src={one} alt=''></img>
                         </div>
                         <div className='hero-slider-description'>
-                            <p>Options shown</p>
-                            <p>WITH THE <strong>2021 PRIUS</strong>, GET</p>
-                            <p>$1,500</p>
-                            <p>Cash Back</p>
-                            <button>View Offer</button>
-                            <button>Explore</button>
+                            <p id='hero-slider-1'>Options shown</p>
+                            <p id='hero-slider-2'>WITH THE <strong>2021 PRIUS</strong>, GET</p>
+                            <h1>$1,500</h1>
+                            <p id='hero-slider-3'><strong>Cash Back</strong></p>
+                            <div className='hero-description-button-1'>
+                                <button> View Offer</button>
+                            </div>
+                            <div className='hero-description-button-2'>
+                                <button>Explore</button>
+                            </div>
                         </div>
                     </div>
                     <div>
@@ -91,7 +95,6 @@ function Hero(){
                             <p>WITH THE <strong>2021 PRIUS</strong>, GET</p>
                             <p>$1,500</p>
                             <p>Cash Back</p>
-                            <button>View Offer</button>
                             <button>Explore</button>
                         </div>
                     </div>
@@ -108,7 +111,7 @@ function Hero(){
             </div>
 
 
-            <div className='header-bottom'>
+            <div className='hero-bottom'>
                 <Indicator index={index} setIndex={setIndex} />
             </div>
 

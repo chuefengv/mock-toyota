@@ -43,7 +43,7 @@
   transition: .175s;
 }
 
-.hero-wrapper .header-indicators {
+.hero-wrapper .hero-indicators {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,7 +52,7 @@
           justify-content: center;
 }
 
-.hero-wrapper .header-indicators .bubble {
+.hero-wrapper .hero-indicators .bubble {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -61,7 +61,7 @@
   cursor: pointer;
 }
 
-.hero-wrapper .header-indicators .header-indicator-unselected {
+.hero-wrapper .hero-indicators .hero-indicator-unselected {
   height: 7px;
   width: 7px;
   background-color: #aaaaaa;
@@ -72,7 +72,7 @@
           transition-timing-function: ease-in;
 }
 
-.hero-wrapper .header-indicators .header-indicator-unselected:hover {
+.hero-wrapper .hero-indicators .hero-indicator-unselected:hover {
   margin: -1.5px;
   height: 10px;
   width: 10px;
@@ -85,7 +85,7 @@
           transition-timing-function: ease-out;
 }
 
-.hero-wrapper .header-indicators .header-indicator-selected {
+.hero-wrapper .hero-indicators .hero-indicator-selected {
   height: 8px;
   width: 8px;
   background-color: #fff;
@@ -93,7 +93,54 @@
   border: solid #0099ff 2px;
 }
 
-.hero-wrapper .header-bottom {
+.hero-wrapper .hero-slider-description {
+  display: -ms-grid;
+  display: grid;
+}
+
+.hero-wrapper .hero-slider-description #hero-slider-1 {
+  margin: 15px;
+  font-size: .75em;
+  color: rgba(78, 78, 78, 0.582);
+}
+
+.hero-wrapper .hero-slider-description #hero-slider-2 {
+  margin: 0;
+}
+
+.hero-wrapper .hero-slider-description #hero-slider-3 {
+  margin: 0 0 25px 0;
+}
+
+.hero-wrapper .hero-slider-description h1 {
+  color: #cc0000;
+  margin: 15px 0 5px 0;
+}
+
+.hero-wrapper .hero-slider-description .hero-description-button-1 {
+  margin: 0 0 10px 0;
+}
+
+.hero-wrapper .hero-slider-description .hero-description-button-1 button {
+  height: 50px;
+  width: 190px;
+  border-radius: 30px;
+  background-color: #cc0000;
+  border: #cc0000 solid;
+  color: white;
+  font-size: 1em;
+}
+
+.hero-wrapper .hero-slider-description .hero-description-button-2 button {
+  height: 50px;
+  width: 190px;
+  border-radius: 30px;
+  background-color: white;
+  border: black solid 2px;
+  font-size: 1em;
+}
+
+.hero-wrapper .hero-bottom {
   position: absolute;
   bottom: 10px;
   left: 0;

@@ -24,6 +24,7 @@ body {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: hero;
+  border-bottom: rgba(0, 0, 0, 0.116) solid 1px;
 }
 
 .body-cars {
