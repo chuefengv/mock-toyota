@@ -24,7 +24,6 @@ body {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: hero;
-  border: solid purple;
 }
 
 .body-cars {
