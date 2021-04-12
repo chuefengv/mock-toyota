@@ -35,16 +35,31 @@ function Hero(){
                             <img src={one} alt=''></img>
                         </div>
                         <div className='hero-slider-description'>
-                            <p id='hero-slider-1'>Options shown</p>
-                            <p id='hero-slider-2'>WITH THE <strong>2021 PRIUS</strong>, GET</p>
-                            <h1>$1,500</h1>
-                            <p id='hero-slider-3'><strong>Cash Back</strong></p>
+
+                            <div class='hero-slider-1 first'>
+                                Options shown
+                            </div>
+
+                            <div className='hero-slider-2 first'>
+                                WITH THE <strong>2021 PRIUS</strong>, GET
+                            </div>
+
+                            <div className='hero-slider-3 first'>
+                                <p><sup>$</sup>1,500</p>
+                            </div>
+
+                            <div className='hero-slider-4 first'>
+                                <p><strong>Cash Back</strong></p>
+                            </div>
+
                             <div className='hero-description-button-1'>
-                                <button> View Offer</button>
+                                <button>VIEW OFFER</button>
                             </div>
+
                             <div className='hero-description-button-2'>
-                                <button>Explore</button>
+                                <button>EXPLORE</button>
                             </div>
+
                         </div>
                     </div>
                     <div>
@@ -56,8 +71,8 @@ function Hero(){
                             <p>WITH THE <strong>2021 PRIUS</strong>, GET</p>
                             <p>$1,500</p>
                             <p>Cash Back</p>
-                            <button>View Offer</button>
-                            <button>Explore</button>
+                            <button>VIEW OFFER</button>
+                            <button>EXPLORE</button>
                         </div>
                     </div>
                     <div>
