@@ -98,19 +98,19 @@ function Hero(){
                         </div>
                         <div className='hero-slider-description'>
 
-                            <div class='hero-slider-1 three'>
+                            <div class='hero-slider-1 third'>
                                 Options shown
                             </div>
 
-                            <div className='hero-slider-2 three'>
+                            <div className='hero-slider-2 third'>
                                 WITH THE <strong>2021 PRIUS PRIME</strong>, GET
                             </div>
 
-                            <div className='hero-slider-3 three'>
+                            <div className='hero-slider-3 third'>
                                 <div className='red-text'><sup>$</sup>4,500</div>
                             </div>
 
-                            <div className='hero-slider-4 three'>
+                            <div className='hero-slider-4 third'>
                                 <p><strong>Cash Back</strong></p>
                             </div>
 
@@ -129,19 +129,19 @@ function Hero(){
                         </div>
                         <div className='hero-slider-description'>
 
-                            <div class='hero-slider-1 four'>
+                            <div class='hero-slider-1 fourth'>
                                 Prototype vehicle shown with options using visual effects
                             </div>
 
-                            <div className='hero-slider-2 four'>
+                            <div className='hero-slider-2 fourth'>
                                 THE ALL NEW 2021 <strong>MIRAI</strong>
                             </div>
 
-                            <div className='hero-slider-3 four'>
+                            <div className='hero-slider-3 fourth'>
                                 <div className='red-text'>INNOVATION IS POWER</div>
                             </div>
 
-                            <div className='hero-slider-4 four'>
+                            <div className='hero-slider-4 fourth'>
                                 <div>The 2021 Mirai's all-new sleek design is as innovative <br></br> as its engineering.</div>
                             </div>
 
@@ -156,19 +156,20 @@ function Hero(){
                         </div>
                         <div className='hero-slider-description'>
 
-                            <div class='hero-slider-1 second'>
+                            <div class='hero-slider-1 fifth'>
                                 Heritage Edition shown in Midnight Black Metallic with yakima MegaWarrior cargo <br></br> basket
                             </div>
 
-                            <div className='hero-slider-2 second'>
+                            <div className='hero-slider-2 fifth'>
                                 2021 <strong>LAND CRUISER</strong>
                             </div>
 
-                            <div className='hero-slider-3 second'>
-                                <div className='red-text'>THE LEGENDARY 2021 LAND CRUISER</div>
+                            <div className='hero-slider-3 fifth'>
+                                <div className='red-text'>THE LEGENDARY 2021 LAND</div>
+                                <div className='red-text'>CRUISER</div>
                             </div>
 
-                            <div className='hero-slider-4 second'>
+                            <div className='hero-slider-4 fifth'>
                                 <div>The ultimate expression of lucury and capability,<br></br>Toyota Land Cruiser is ready to make an impression<br></br>whereever you go.</div>
                             </div>
 

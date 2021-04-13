@@ -87,8 +87,12 @@ $red : rgb(235, 10, 30);
     .hero-slider-description{
         display: grid;
 
+    .red-text{
+        color: rgb(204,0,0)
+    }
+
         .hero-slider-1{
-            margin: 15px 0 15px 0;
+            margin: 5px 0 15px 0;
             font-size: .6em;
             color: rgba(78, 78, 78, 0.582);
         }
@@ -112,6 +116,14 @@ $red : rgb(235, 10, 30);
                     margin: 0 5px 0 5px;
                 }
             }
+
+            &.fourth{
+                font-size: 2em;
+            }
+
+            &.fifth{
+                font-size: 2em
+            }
         }
 
         .hero-slider-4{
@@ -130,8 +142,14 @@ $red : rgb(235, 10, 30);
                 }
             }
 
-            &.four{
+            &.fourth{
                 font-size: 1em;
+                line-height: 1.5;
+            }
+
+            &.fifth{
+                font-size: 1em;
+                line-height: 1.5;
             }
         }
 
@@ -188,6 +206,3 @@ $red : rgb(235, 10, 30);
     }
 }
 
-.red-text{
-    color: rgb(204,0,0)
-}

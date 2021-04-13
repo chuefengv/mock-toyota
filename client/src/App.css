@@ -33,17 +33,20 @@ body {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: body-cars;
+  border: solid green;
 }
 
 .body-info {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: body-info;
+  border: solid blue;
 }
 
 .footer {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: footer;
+  border: solid red;
 }
 /*# sourceMappingURL=App.css.map */

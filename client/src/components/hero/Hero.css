@@ -98,8 +98,12 @@
   display: grid;
 }
 
+.hero-wrapper .hero-slider-description .red-text {
+  color: #cc0000;
+}
+
 .hero-wrapper .hero-slider-description .hero-slider-1 {
-  margin: 15px 0 15px 0;
+  margin: 5px 0 15px 0;
   font-size: .6em;
   color: rgba(78, 78, 78, 0.582);
 }
@@ -131,6 +135,14 @@
   margin: 0 5px 0 5px;
 }
 
+.hero-wrapper .hero-slider-description .hero-slider-3.fourth {
+  font-size: 2em;
+}
+
+.hero-wrapper .hero-slider-description .hero-slider-3.fifth {
+  font-size: 2em;
+}
+
 .hero-wrapper .hero-slider-description .hero-slider-4 {
   font-size: .8em;
   margin: 10px 0 25px 0;
@@ -154,8 +166,14 @@
   margin: 0 5px 0 5px;
 }
 
-.hero-wrapper .hero-slider-description .hero-slider-4.four {
+.hero-wrapper .hero-slider-description .hero-slider-4.fourth {
   font-size: 1em;
+  line-height: 1.5;
+}
+
+.hero-wrapper .hero-slider-description .hero-slider-4.fifth {
+  font-size: 1em;
+  line-height: 1.5;
 }
 
 .hero-wrapper .hero-slider-description .hero-description-button-1 {
@@ -220,9 +238,5 @@
   bottom: 10px;
   left: 0;
   right: 0;
-}
-
-.red-text {
-  color: #cc0000;
 }
 /*# sourceMappingURL=Hero.css.map */

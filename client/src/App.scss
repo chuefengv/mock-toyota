@@ -17,7 +17,6 @@ body{
     "footer";
     min-height: 100vh;
     font-family: 'Roboto', sans-serif;
-
 }
 
 .header{
@@ -30,13 +29,17 @@ body{
 }
 .body-cars{
     grid-area: body-cars;
+    border: solid green;
+
 }
 
 .body-info{
     grid-area: body-info;
+    border: solid blue;
 
 }
 
 .footer{
     grid-area: footer;
+    border: solid red;
 }

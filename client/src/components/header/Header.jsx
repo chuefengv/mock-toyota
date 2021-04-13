@@ -5,10 +5,24 @@ import olympic from '../../assets/olympic.svg'
 import paralympic from '../../assets/paralympic.svg'
 import location from '../../assets/location.svg';
 import { Fade as Hamburger } from 'hamburger-react'
+import {Collapse} from '@material-ui/core'
+import HamburgerMenu from './hamburger-menu/HamburgerMenu';
 
 
+function Header({openMenu, setOpenMenu}){
 
-function Header(){
+    function menuFunc(){
+        setOpenMenu(!openMenu)
+
+        if(document.body.style.overflow === 'hidden'){
+            document.body.style.overflow = 'scroll'
+        }else{
+            document.body.style.overflow = 'hidden'
+        }
+
+        window.scrollTo(0,0);
+    }
+
     return(
         <div className='header-wrapper'>
             <div className='header-logo'>
@@ -29,8 +43,15 @@ function Header(){
                     <img src={location} alt=''></img>
                     <p>90210</p>
                 </div>
-                <Hamburger size={26} className='header-hamburger' />
+                <div className='header-nav-ham'>
+                    <Hamburger label="Show menu" size={26} className='header-hamburger' onToggle={()=>menuFunc()}/>
+                </div>
             </div>
+
+            <Collapse in={openMenu} className='menu'>
+                <HamburgerMenu />
+            </Collapse>
+
 
         </div>
     );
