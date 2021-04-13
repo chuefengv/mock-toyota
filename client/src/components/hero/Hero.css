@@ -109,7 +109,6 @@
 }
 
 .hero-wrapper .hero-slider-description .hero-slider-3 {
-  color: #cc0000;
   font-size: 2.25em;
   font-weight: bold;
   margin: 10px 0 0 0;
@@ -119,6 +118,19 @@
   margin: 0;
 }
 
+.hero-wrapper .hero-slider-description .hero-slider-3.second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-wrapper .hero-slider-description .hero-slider-3.second div {
+  margin: 0 5px 0 5px;
+}
+
 .hero-wrapper .hero-slider-description .hero-slider-4 {
   font-size: .8em;
   margin: 10px 0 25px 0;
@@ -126,6 +138,20 @@
 
 .hero-wrapper .hero-slider-description .hero-slider-4 p {
   margin: 0;
+}
+
+.hero-wrapper .hero-slider-description .hero-slider-4.second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1em;
+}
+
+.hero-wrapper .hero-slider-description .hero-slider-4.second div {
+  margin: 0 5px 0 5px;
 }
 
 .hero-wrapper .hero-slider-description .hero-description-button-1 {
@@ -148,12 +174,14 @@
 }
 
 .hero-wrapper .hero-slider-description .hero-description-button-1 :hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
   -webkit-transition: .25s;
   transition: .25s;
   -webkit-transition-timing-function: ease-out;
           transition-timing-function: ease-out;
+  background-color: #810000;
+  border: #810000 solid;
 }
 
 .hero-wrapper .hero-slider-description .hero-description-button-2 {
@@ -175,8 +203,8 @@
 }
 
 .hero-wrapper .hero-slider-description .hero-description-button-2 :hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
   -webkit-transition: .25s;
   transition: .25s;
   -webkit-transition-timing-function: ease-out;
@@ -188,5 +216,9 @@
   bottom: 10px;
   left: 0;
   right: 0;
+}
+
+.red-text {
+  color: #cc0000;
 }
 /*# sourceMappingURL=Hero.css.map */

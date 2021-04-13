@@ -98,12 +98,19 @@ $red : rgb(235, 10, 30);
         }
 
         .hero-slider-3{
-            color: rgb(204, 0, 0);
             font-size: 2.25em;
             font-weight: bold;
             margin: 10px 0 0 0;
             p{
                 margin: 0;
+            }
+
+            &.second{
+                display: flex;
+                justify-content: center;
+                div{
+                    margin: 0 5px 0 5px;
+                }
             }
         }
 
@@ -112,6 +119,15 @@ $red : rgb(235, 10, 30);
             margin: 10px 0 25px 0;
             p{
                 margin: 0;
+            }
+
+            &.second{
+                display: flex;
+                justify-content: center;
+                font-size: 1em;
+                div{
+                    margin: 0 5px 0 5px;
+                }
             }
         }
 
@@ -130,9 +146,12 @@ $red : rgb(235, 10, 30);
                 transition-timing-function: ease-in;
             }
             :hover{
-                transform: scale(1.1);
+                transform: scale(1.08);
                 transition: .25s;
                 transition-timing-function: ease-out;
+                background-color: rgb(129, 0, 0);
+                border: rgb(129,0,0) solid;
+
             }
             
 
@@ -151,7 +170,7 @@ $red : rgb(235, 10, 30);
                 transition-timing-function: ease-in;
             }
             :hover{
-                transform: scale(1.1);
+                transform: scale(1.08);
                 transition: .25s;
                 transition-timing-function: ease-out;            }
         }
@@ -163,4 +182,8 @@ $red : rgb(235, 10, 30);
         left: 0;
         right: 0;
     }
+}
+
+.red-text{
+    color: rgb(204,0,0)
 }
