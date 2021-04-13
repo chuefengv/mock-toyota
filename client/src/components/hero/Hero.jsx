@@ -76,7 +76,7 @@ function Hero(){
                             </div>
 
                             <div className='hero-slider-3 second'>
-                                <div className='red-text'><sup>$</sup>235</div> <p><sub>/mo | </sub></p> <div className='red-text'>36</div> <p><sub>mo</sub></p>
+                                <div className='red-text'><sup>$</sup>235</div> <p><sub>/mo | </sub></p> <div className='red-text'><sub>36</sub></div> <p><sub>mo</sub></p>
                             </div>
 
                             <div className='hero-slider-4 second'>
@@ -98,19 +98,19 @@ function Hero(){
                         </div>
                         <div className='hero-slider-description'>
 
-                            <div class='hero-slider-1 first'>
+                            <div class='hero-slider-1 three'>
                                 Options shown
                             </div>
 
-                            <div className='hero-slider-2 first'>
+                            <div className='hero-slider-2 three'>
                                 WITH THE <strong>2021 PRIUS PRIME</strong>, GET
                             </div>
 
-                            <div className='hero-slider-3 first'>
+                            <div className='hero-slider-3 three'>
                                 <div className='red-text'><sup>$</sup>4,500</div>
                             </div>
 
-                            <div className='hero-slider-4 first'>
+                            <div className='hero-slider-4 three'>
                                 <p><strong>Cash Back</strong></p>
                             </div>
 
@@ -129,27 +129,23 @@ function Hero(){
                         </div>
                         <div className='hero-slider-description'>
 
-                            <div class='hero-slider-1 second'>
-                                Prototype shown with options
+                            <div class='hero-slider-1 four'>
+                                Prototype vehicle shown with options using visual effects
                             </div>
 
-                            <div className='hero-slider-2 second'>
-                                GET YOUR <strong>2021 CAMRY</strong> FOR
+                            <div className='hero-slider-2 four'>
+                                THE ALL NEW 2021 <strong>MIRAI</strong>
                             </div>
 
-                            <div className='hero-slider-3 second'>
-                                <div className='red-text'><sup>$</sup>235</div> <p> /mo | </p> <div className='red-text'>36</div> <p>mo</p>
+                            <div className='hero-slider-3 four'>
+                                <div className='red-text'>INNOVATION IS POWER</div>
                             </div>
 
-                            <div className='hero-slider-4 second'>
-                                <div className='red-text'><strong><sup>$</sup>2,999</strong></div> <p>due at signing</p>
+                            <div className='hero-slider-4 four'>
+                                <div>The 2021 Mirai's all-new sleek design is as innovative <br></br> as its engineering.</div>
                             </div>
 
                             <div className='hero-description-button-1'>
-                                <button>VIEW OFFER</button>
-                            </div>
-
-                            <div className='hero-description-button-2'>
                                 <button>EXPLORE</button>
                             </div>
                         </div>
@@ -161,23 +157,23 @@ function Hero(){
                         <div className='hero-slider-description'>
 
                             <div class='hero-slider-1 second'>
-                                Prototype shown with options
+                                Heritage Edition shown in Midnight Black Metallic with yakima MegaWarrior cargo <br></br> basket
                             </div>
 
                             <div className='hero-slider-2 second'>
-                                GET YOUR <strong>2021 CAMRY</strong> FOR
+                                2021 <strong>LAND CRUISER</strong>
                             </div>
 
                             <div className='hero-slider-3 second'>
-                                <div className='red-text'><sup>$</sup>235</div> <p> /mo | </p> <div className='red-text'>36</div> <p>mo</p>
+                                <div className='red-text'>THE LEGENDARY 2021 LAND CRUISER</div>
                             </div>
 
                             <div className='hero-slider-4 second'>
-                                <div className='red-text'><strong><sup>$</sup>2,999</strong></div> <p>due at signing</p>
+                                <div>The ultimate expression of lucury and capability,<br></br>Toyota Land Cruiser is ready to make an impression<br></br>whereever you go.</div>
                             </div>
 
                             <div className='hero-description-button-1'>
-                                <button>VIEW OFFER</button>
+                                <button>SEARCH INVENTORY</button>
                             </div>
 
                             <div className='hero-description-button-2'>

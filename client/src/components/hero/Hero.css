@@ -154,6 +154,10 @@
   margin: 0 5px 0 5px;
 }
 
+.hero-wrapper .hero-slider-description .hero-slider-4.four {
+  font-size: 1em;
+}
+
 .hero-wrapper .hero-slider-description .hero-description-button-1 {
   margin: 0 0 10px 0;
 }
