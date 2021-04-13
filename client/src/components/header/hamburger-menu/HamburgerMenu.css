@@ -2,5 +2,39 @@
   height: 100vh;
   background-color: white;
   border-top: #e8e8e8 solid 1px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20px 1fr 20px;
+      grid-template-columns: 20px 1fr 20px;
+  -ms-grid-rows: auto auto auto auto auto 1fr;
+      grid-template-rows: auto auto auto auto auto 1fr;
+}
+
+.hm-wrapper .nav-choices {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  border-bottom: #e8e8e8 solid 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0 20px 10px;
+  cursor: pointer;
+}
+
+.hm-wrapper .nav-choices-extra {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  padding: 20px 0 20px 0;
+  color: #777777;
+}
+
+.hm-wrapper .nav-choices-extra div {
+  padding: 5px 0 5px 0;
+  cursor: pointer;
 }
 /*# sourceMappingURL=HamburgerMenu.css.map */

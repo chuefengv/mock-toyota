@@ -19,7 +19,6 @@ function Header({openMenu, setOpenMenu}){
         }else{
             document.body.style.overflow = 'hidden'
         }
-
         window.scrollTo(0,0);
     }
 
@@ -48,7 +47,7 @@ function Header({openMenu, setOpenMenu}){
                 </div>
             </div>
 
-            <Collapse in={openMenu} className='menu'>
+            <Collapse in={openMenu} timeout={400} className='menu'>
                 <HamburgerMenu />
             </Collapse>
 

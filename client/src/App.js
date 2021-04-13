@@ -18,7 +18,6 @@ function App() {
         <Hero />
       </div>
 
-
       <div className='body-cars'>
         <BodyCars />
       </div>
