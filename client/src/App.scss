@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 body{
     margin: 0;
     height: 100%;
@@ -14,6 +16,8 @@ body{
     "body-info"
     "footer";
     min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 .header{
@@ -22,7 +26,7 @@ body{
 
 .hero{
     grid-area: hero;
-    border-bottom: rgba(231, 231, 231) solid 1px;
+    border-bottom: rgb(231, 231, 231) solid 1px;
 }
 .body-cars{
     grid-area: body-cars;

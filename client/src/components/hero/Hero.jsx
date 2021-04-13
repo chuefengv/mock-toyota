@@ -59,7 +59,6 @@ function Hero(){
                             <div className='hero-description-button-2'>
                                 <button>EXPLORE</button>
                             </div>
-
                         </div>
                     </div>
                     <div>

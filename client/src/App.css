@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 body {
   margin: 0;
   height: 100%;
@@ -12,6 +13,7 @@ body {
       grid-template-rows: auto 1fr 1fr 1fr 1fr;
       grid-template-areas: "header" "hero" "body-cars" "body-info" "footer";
   min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
 }
 
 .header {
@@ -24,7 +26,7 @@ body {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: hero;
-  border-bottom: rgba(0, 0, 0, 0.116) solid 1px;
+  border-bottom: #e7e7e7 solid 1px;
 }
 
 .body-cars {
