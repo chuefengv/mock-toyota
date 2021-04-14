@@ -5,6 +5,7 @@
     display: grid;
     grid-template-columns: 20px 1fr 20px;
     grid-template-rows: auto auto auto auto auto 1fr;
+    
 
     .nav-choices{
         grid-column: 2/3;
@@ -17,9 +18,10 @@
     }
 
     .nav-choices-extra{
-        grid-column: 2/3;
-        padding: 20px 0 20px 0;
+        grid-column: 1/2;
+        padding: 20px;
         color: rgb(119, 119, 119);
+        justify-content: baseline;
         div{
             padding: 5px 0 5px 0;
             cursor: pointer;

@@ -10,6 +10,34 @@
       grid-template-rows: auto auto auto auto auto 1fr;
 }
 
+.hm-wrapper .nav-title {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  color: #777777;
+  border-bottom: #e8e8e8 solid 1px;
+}
+
+.hm-wrapper .nav-title .nav-choices-arrow {
+  justify-self: baseline;
+  cursor: pointer;
+}
+
+.hm-wrapper .nav-title .nav-title-name {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-size: 1.2em;
+}
+
+.hm-wrapper .nav-title h2 {
+  margin: 0;
+}
+
 .hm-wrapper .nav-choices {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -24,17 +52,4 @@
   padding: 20px 0 20px 10px;
   cursor: pointer;
 }
-
-.hm-wrapper .nav-choices-extra {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  padding: 20px 0 20px 0;
-  color: #777777;
-}
-
-.hm-wrapper .nav-choices-extra div {
-  padding: 5px 0 5px 0;
-  cursor: pointer;
-}
-/*# sourceMappingURL=HamburgerMenu.css.map */
+/*# sourceMappingURL=MenuTwo.css.map */
