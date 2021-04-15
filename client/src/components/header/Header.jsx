@@ -6,9 +6,8 @@ import paralympic from '../../assets/paralympic.svg'
 import location from '../../assets/location.svg';
 import { Fade as Hamburger } from 'hamburger-react'
 import {Collapse} from '@material-ui/core'
-import MenuOne from './hamburger-menu/menu-one/MenuOne';
-import MenuTwo from './hamburger-menu/menu-two/MenuTwo';
-import MenuThree from './hamburger-menu/menu-three/MenuThree';
+import MenuOne from './hamburger-menu/MainMenu';
+import LoadedMenu from './hamburger-menu/LoadedMenu';
 
 
 
@@ -18,6 +17,10 @@ import { Carousel } from 'react-responsive-carousel';
 function Header({openMenu, setOpenMenu}){
 
     const [index, setIndex] = useState(0);
+    const [menu01, setMenu01] = useState(false);
+    const [menu02, setMenu02] = useState(false);
+    const [menu03, setMenu03] = useState(false);
+    const [menu04, setMenu04] = useState(false);
 
     function menuFunc(){
         setOpenMenu(!openMenu)
@@ -61,13 +64,10 @@ function Header({openMenu, setOpenMenu}){
             <Collapse in={openMenu} timeout={400} className='menu'>
                 <Carousel selectedItem={index} showArrows={false} showIndicators={false} showThumbs={false} showStatus={false}>
                     <div>
-                        <MenuOne setIndex={setIndex} />
+                        <MenuOne setIndex={setIndex} setMenu01={setMenu01} setMenu02={setMenu02} setMenu03={setMenu03} setMenu04={setMenu04}/>
                     </div>
                     <div>
-                        <MenuTwo setIndex={setIndex} />
-                    </div>
-                    <div>
-                        <MenuThree setIndex={setIndex} />
+                        <LoadedMenu setIndex={setIndex} menu01={menu01} menu02={menu02} menu03={menu03} menu04={menu04} setMenu01={setMenu01} setMenu02={setMenu02} setMenu03={setMenu03} setMenu04={setMenu04}/>
                     </div>
                 </Carousel>
             </Collapse>
