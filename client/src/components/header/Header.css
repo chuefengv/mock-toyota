@@ -1,8 +1,8 @@
 .header-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto 1fr;
-      grid-template-columns: auto auto 1fr;
+  -ms-grid-columns: auto auto auto 1fr;
+      grid-template-columns: auto auto auto 1fr;
   -ms-grid-rows: 10px 40px 10px;
       grid-template-rows: 10px 40px 10px;
 }
@@ -13,14 +13,13 @@
   grid-row: 2/3;
   display: -ms-grid;
   display: grid;
-  border-right: black thin solid;
 }
 
 .header-wrapper .header-logo .header-logo-box {
   -ms-grid-row-align: center;
       align-self: center;
   padding: 6px;
-  margin: 0 10px 0 10px;
+  margin: 0 0 0 10px;
   background-color: #eb0a1e;
   display: -ms-grid;
   display: grid;
@@ -32,6 +31,13 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.header-wrapper .header-toyota {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  border-right: black thin solid;
 }
 
 .header-wrapper .header-olympics {
@@ -48,6 +54,51 @@
 .header-wrapper .header-olympics img {
   -ms-grid-column-align: center;
       justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.header-wrapper .header-nav-two {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/4;
+  justify-self: end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-columns: 1fr auto;
+      grid-template-columns: 1fr auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+}
+
+.header-wrapper .header-nav-two .header-nav-two-select {
+  padding: 0 8px 0 8px;
+  font-size: .9em;
+  padding: 0 8px 0 8px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #59595b;
+}
+
+.header-wrapper .header-nav-two .header-nav-two-select div {
+  padding: 0 5px 0 5px;
+}
+
+.header-wrapper .header-nav-two .header-nav-two-red {
+  background-color: #cc0000;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  padding: 0 8px 0 8px;
+  font-size: .9em;
+}
+
+.header-wrapper .header-nav-two .header-nav-two-red div {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
