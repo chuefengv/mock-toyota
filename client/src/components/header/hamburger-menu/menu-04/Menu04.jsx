@@ -10,13 +10,33 @@ function Menu04({setIndex, }){
     }
 
     return(
-        <div className='hm-wrapper'>
-            <div className='nav-choices'>
-                <div className='nav-choices-arrow'>
+        <div className='hm-wrapper four'>
+            <div className='nav-title'>
+                <div className='nav-choices-arrow-left'>
                    <FontAwesomeIcon icon={faChevronLeft} color={'rgb(204, 0, 0)'} onClick={()=>goBack()}></FontAwesomeIcon>
                 </div>
-                <div>04</div>
+                <p>HELPFUL LINKS</p>
             </div>
+
+            <div className='nav-choices'>
+                <div>Owners Homepage</div>
+            </div>
+            <div className='nav-choices'>
+                <div>Manuals & Warranties</div>
+            </div>
+            <div className='nav-choices'>
+                <div>Dashboard Lights</div>
+            </div>
+            <div className='nav-choices'>
+                <div>Scheduel Service</div>
+            </div>
+            <div className='nav-choices'>
+                <div>Audio Multimedia</div>
+            </div>
+            <div className='nav-choices'>
+                <div>Recall Information</div>
+            </div>
+
         </div>
     )
 }

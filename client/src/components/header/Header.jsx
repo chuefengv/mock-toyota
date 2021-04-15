@@ -44,12 +44,10 @@ function Header({openMenu, setOpenMenu}){
                 </div>
             </div>
 
-
             <div className='header-olympics'>
                 <img src={olympic} alt=''></img>
                 <img src={paralympic} alt=''></img>
             </div>
-
 
             <div className='header-nav'>
                 <div className='header-nav-location'>

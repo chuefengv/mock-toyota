@@ -20,6 +20,21 @@
       grid-template-rows: auto auto auto auto auto auto auto auto 1fr;
 }
 
+.hm-wrapper.two {
+  -ms-grid-rows: auto auto auto auto auto auto auto auto auto 1fr;
+      grid-template-rows: auto auto auto auto auto auto auto auto auto 1fr;
+}
+
+.hm-wrapper.three {
+  -ms-grid-rows: auto auto auto auto auto auto auto auto auto auto auto auto 1fr;
+      grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto 1fr;
+}
+
+.hm-wrapper.four {
+  -ms-grid-rows: auto auto auto auto auto auto auto 1fr;
+      grid-template-rows: auto auto auto auto auto auto auto 1fr;
+}
+
 .hm-wrapper .nav-title {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;

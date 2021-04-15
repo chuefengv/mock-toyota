@@ -15,7 +15,7 @@ function Menu01({setIndex}){
                 <div className='nav-choices-arrow-left'>
                    <FontAwesomeIcon icon={faChevronLeft} color={'rgb(204, 0, 0)'} onClick={()=>goBack()}></FontAwesomeIcon>
                 </div>
-                <p>Vehicle</p>
+                <p>VEHICLES</p>
             </div>
 
             <div className='nav-choices'>

@@ -11,7 +11,7 @@
 
 .hero-wrapper .hero-arrows-left {
   position: absolute;
-  top: 10%;
+  top: 12%;
   left: 0;
   padding: 15px 5px 15px 5px;
   background-color: rgba(255, 255, 255, 0.7);
@@ -21,7 +21,7 @@
 
 .hero-wrapper .hero-arrows-right {
   position: absolute;
-  top: 10%;
+  top: 12%;
   right: 0;
   padding: 15px 5px 15px 5px;
   background-color: rgba(255, 255, 255, 0.7);
@@ -41,6 +41,29 @@
   background-color: #eb0a1e;
   -webkit-transition: .175s;
   transition: .175s;
+}
+
+@media screen and (min-width: 700px) {
+  .hero-wrapper .hero-arrows-left {
+    position: absolute;
+    top: 13%;
+    left: 0;
+    padding: 35px 20px 35px 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    color: #eb0a1e;
+    font-size: 2em;
+  }
+  .hero-wrapper .hero-arrows-right {
+    position: absolute;
+    top: 13%;
+    right: 0;
+    padding: 35px 20px 35px 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    color: #eb0a1e;
+    font-size: 2em;
+  }
 }
 
 .hero-wrapper .hero-indicators {

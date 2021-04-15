@@ -15,7 +15,7 @@ $red : rgb(235, 10, 30);
 
     .hero-arrows-left{
         position:absolute;
-        top: 10%;
+        top: 12%;
         left: 0;
         padding: 15px 5px 15px 5px;
         background-color: rgba(white, .7);
@@ -25,7 +25,7 @@ $red : rgb(235, 10, 30);
 
     .hero-arrows-right{
         position:absolute;
-        top: 10%;
+        top: 12%;
         right: 0;
         padding: 15px 5px 15px 5px;
         background-color: rgba(white, .7);
@@ -43,6 +43,30 @@ $red : rgb(235, 10, 30);
         color: white;
         background-color: $red;
         transition: .175s;
+    }
+
+    @media screen and (min-width: 700px){
+        .hero-arrows-left{
+            position:absolute;
+            top: 13%;
+            left: 0;
+            padding: 35px 20px 35px 20px;
+            background-color: rgba(white, .7);
+            cursor: pointer;
+            color: $red;
+            font-size: 2em;
+        }
+
+        .hero-arrows-right{
+            position:absolute;
+            top: 13%;
+            right: 0;
+            padding: 35px 20px 35px 20px;
+            background-color: rgba(white, .7);
+            cursor: pointer;
+            color: $red;
+            font-size: 2em;
+        }
     }
 
     .hero-indicators{

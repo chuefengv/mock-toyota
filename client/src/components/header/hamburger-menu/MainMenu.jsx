@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './MainMenu.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';

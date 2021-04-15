@@ -32,37 +32,6 @@ function Hero(){
                 <Carousel selectedItem={index} showArrows={false} showIndicators={false} showThumbs={false} showStatus={false} infiniteLoop={true}>
                     <div>
                         <div>
-                            <img src={one} alt=''></img>
-                        </div>
-                        <div className='hero-slider-description'>
-
-                            <div class='hero-slider-1 first'>
-                                Options shown
-                            </div>
-
-                            <div className='hero-slider-2 first'>
-                                WITH THE <strong>2021 PRIUS</strong>, GET
-                            </div>
-
-                            <div className='hero-slider-3 first'>
-                            <div className='red-text'><sup>$</sup>1,500</div>
-                            </div>
-
-                            <div className='hero-slider-4 first'>
-                                <p><strong>Cash Back</strong></p>
-                            </div>
-
-                            <div className='hero-description-button-1'>
-                                <button>VIEW OFFER</button>
-                            </div>
-
-                            <div className='hero-description-button-2'>
-                                <button>EXPLORE</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
                             <img src={two} alt=''></img>
                         </div>
                         <div className='hero-slider-description'>
@@ -81,6 +50,37 @@ function Hero(){
 
                             <div className='hero-slider-4 second'>
                                 <div className='red-text'><strong><sup>$</sup>2,999</strong></div> <p>due at signing</p>
+                            </div>
+
+                            <div className='hero-description-button-1'>
+                                <button>VIEW OFFER</button>
+                            </div>
+
+                            <div className='hero-description-button-2'>
+                                <button>EXPLORE</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src={one} alt=''></img>
+                        </div>
+                        <div className='hero-slider-description'>
+
+                            <div class='hero-slider-1 first'>
+                                Options shown
+                            </div>
+
+                            <div className='hero-slider-2 first'>
+                                WITH THE <strong>2021 PRIUS</strong>, GET
+                            </div>
+
+                            <div className='hero-slider-3 first'>
+                            <div className='red-text'><sup>$</sup>1,500</div>
+                            </div>
+
+                            <div className='hero-slider-4 first'>
+                                <p><strong>Cash Back</strong></p>
                             </div>
 
                             <div className='hero-description-button-1'>
