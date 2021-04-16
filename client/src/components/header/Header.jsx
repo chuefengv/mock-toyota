@@ -16,13 +16,13 @@ import { faChevronDown, faSearch, faPencilAlt } from '@fortawesome/free-solid-sv
 import { Carousel } from 'react-responsive-carousel';
 
 
-function Header({openMenu, setOpenMenu}){
+function Header(){
 
-    
+    const [openMenu, setOpenMenu] = useState(false);
     const [index, setIndex] = useState(0);
-    const [deskNav, setDeskNav] = useState((window.innerWidth>=820) ? true : false);
-    const [mobNav, setMobNav] = useState((window.innerWidth<820) ? true: false);
-    const [toyotaLogo, setToyotaLogo] = useState((window.innerWidth>=820) ? true : false);
+    const [deskNav, setDeskNav] = useState((window.innerWidth>=837) ? true : false);
+    const [mobNav, setMobNav] = useState((window.innerWidth<837) ? true: false);
+    const [toyotaLogo, setToyotaLogo] = useState((window.innerWidth>=837) ? true : false);
     const [menu01, setMenu01] = useState(false);
     const [menu02, setMenu02] = useState(false);
     const [menu03, setMenu03] = useState(false);
@@ -42,7 +42,7 @@ function Header({openMenu, setOpenMenu}){
 
     useEffect(()=>{
         function renderNav(){
-            if(window.innerWidth>=820){
+            if(window.innerWidth>=837){
                 setDeskNav(true);
                 setMobNav(false);
                 setOpenMenu(false);
@@ -83,13 +83,17 @@ function Header({openMenu, setOpenMenu}){
             </div>}
 
             <div className='header-logo'>
-                <div className='header-logo-box'>
-                    <img src={toyota} alt=''></img>
-                </div>
+                <a href='/'>
+                    <div className='header-logo-box'>
+                        <img src={toyota} alt=''></img>
+                    </div>
+                </a>
             </div>
 
             {toyotaLogo && <div className='header-toyota'>
-                <img src={toyota_big} alt=''></img>   
+                <a href='/'>
+                    <img src={toyota_big} alt=''></img>   
+                </a>
             </div>}
 
             <div className='header-olympics'>
@@ -108,10 +112,10 @@ function Header({openMenu, setOpenMenu}){
                     <FontAwesomeIcon icon={faChevronDown} color={'rgb(204, 0, 0)'} ></FontAwesomeIcon>
                 </div>
                 <div className='header-nav-two-select'>
-                    Find a Dealer
+                    <div>Find a Dealer</div>
                 </div>
                 <div className='header-nav-two-select'>
-                    Build & Price
+                    <div>Build & Price</div>
                 </div>
                 <div className='header-nav-two-red'>
                     <div>
@@ -141,6 +145,9 @@ function Header({openMenu, setOpenMenu}){
                 </Carousel>
             </Collapse>}
 
+            {deskNav && <Collapse>
+            
+            </Collapse>}
 
         </div>
     );

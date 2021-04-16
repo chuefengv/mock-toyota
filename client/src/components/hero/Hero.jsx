@@ -60,6 +60,7 @@ function Hero(){
                                 <button>EXPLORE</button>
                             </div>
                         </div>
+
                     </div>
                     <div>
                         <div>
@@ -151,13 +152,13 @@ function Hero(){
                         </div>
                     </div>
                     <div>
-                    <div>
+                        <div>
                             <img src={five} alt=''></img>
                         </div>
                         <div className='hero-slider-description'>
 
                             <div class='hero-slider-1 fifth'>
-                                Heritage Edition shown in Midnight Black Metallic with yakima MegaWarrior cargo <br></br> basket
+                                Heritage Edition shown in Midnight Black Metallic with yakima MegaWarrior cargo basket
                             </div>
 
                             <div className='hero-slider-2 fifth'>
@@ -170,7 +171,7 @@ function Hero(){
                             </div>
 
                             <div className='hero-slider-4 fifth'>
-                                <div>The ultimate expression of lucury and capability,<br></br>Toyota Land Cruiser is ready to make an impression<br></br>whereever you go.</div>
+                                <div>The ultimate expression of luxury and capability,<br></br>Toyota Land Cruiser is ready to make an impression<br></br>wherever you go.</div>
                             </div>
 
                             <div className='hero-description-button-1'>

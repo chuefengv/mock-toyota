@@ -80,17 +80,16 @@ $red : rgb(235, 10, 30);
 
 
 
-@media only screen and (min-width: 820px){
+@media only screen and (min-width: 837px){
     .header-wrapper{
         grid-template-columns: auto auto auto 1fr;
         grid-template-rows: auto 10px 40px 10px;
-
         .header-secondary{
             display: flex;
             flex-direction: row;
             grid-column: 1/5;
             grid-row: 1/2;
-            justify-content: end;
+            justify-content: flex-end;
             background-color: rgb(245,245,245);
             color: rgb(89, 89, 91);
             padding: 10px 0 10px 0;
@@ -142,6 +141,7 @@ $red : rgb(235, 10, 30);
     
                 div{
                     padding: 0 5px 0 5px;
+                    cursor: pointer;
                 }
             }
     
@@ -153,6 +153,7 @@ $red : rgb(235, 10, 30);
                 font-size: .9em;
                 div{
                     align-self: center;
+                    cursor: pointer;
                 }
             }
     

@@ -1,6 +1,5 @@
 .hero-wrapper {
   position: relative;
-  min-height: 600px;
   max-width: 100vw;
 }
 
@@ -129,16 +128,25 @@
   margin: 5px 0 15px 0;
   font-size: .6em;
   color: rgba(78, 78, 78, 0.582);
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
 }
 
 .hero-wrapper .hero-slider-description .hero-slider-2 {
   font-size: .8em;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
 }
 
 .hero-wrapper .hero-slider-description .hero-slider-3 {
   font-size: 2.25em;
   font-weight: bold;
   margin: 10px 0 0 0;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
 }
 
 .hero-wrapper .hero-slider-description .hero-slider-3 p {
@@ -169,6 +177,9 @@
 .hero-wrapper .hero-slider-description .hero-slider-4 {
   font-size: .8em;
   margin: 10px 0 25px 0;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
 }
 
 .hero-wrapper .hero-slider-description .hero-slider-4 p {
@@ -201,6 +212,9 @@
 
 .hero-wrapper .hero-slider-description .hero-description-button-1 {
   margin: 0 0 10px 0;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-row: 5/6;
 }
 
 .hero-wrapper .hero-slider-description .hero-description-button-1 button {
@@ -230,6 +244,9 @@
 }
 
 .hero-wrapper .hero-slider-description .hero-description-button-2 {
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 1;
+  grid-row: 6/7;
   margin: 0 0 10px 0;
 }
 
@@ -257,9 +274,38 @@
 }
 
 .hero-wrapper .hero-bottom {
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  right: 0;
+  margin: 10px 0 10px 0;
+}
+
+@media only screen and (min-width: 1100px) {
+  .hero-wrapper .hero-slider-description {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    background-color: rgba(255, 255, 255, 0.75);
+    max-width: 350px;
+    max-height: 400px;
+    width: 100%;
+    height: 100%;
+  }
+  .hero-wrapper .hero-slider-description .hero-slider-1 {
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 1;
+    grid-row: 7/8;
+    margin: 0 0 20px 0;
+  }
+  .hero-wrapper .hero-slider-description .hero-slider-2.fifth {
+    padding: 10px 0 0 0;
+  }
+  .hero-wrapper .hero-slider-description .hero-slider-3.fifth {
+    font-size: 1.5em;
+  }
+  .hero-wrapper .hero-bottom {
+    position: absolute;
+    margin: 0;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+  }
 }
 /*# sourceMappingURL=Hero.css.map */
