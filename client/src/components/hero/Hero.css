@@ -180,6 +180,9 @@
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
   grid-row: 4/5;
+  width: 390px;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .hero-wrapper .hero-slider-description .hero-slider-4 p {
@@ -299,6 +302,15 @@
   }
   .hero-wrapper .hero-slider-description .hero-slider-3.fifth {
     font-size: 1.5em;
+  }
+  .hero-wrapper .hero-slider-description .hero-slider-4 {
+    width: 300px;
+  }
+  .hero-wrapper .hero-arrows-left {
+    top: 25%;
+  }
+  .hero-wrapper .hero-arrows-right {
+    top: 25%;
   }
   .hero-wrapper .hero-bottom {
     position: absolute;

@@ -157,6 +157,8 @@ $red : rgb(235, 10, 30);
             font-size: .8em;
             margin: 10px 0 25px 0;
             grid-row: 4/5;
+            width: 390px;
+            justify-self: center;
 
             p{
                 margin: 0;
@@ -265,6 +267,18 @@ $red : rgb(235, 10, 30);
                         font-size: 1.5em;
                 }
             }
+
+            .hero-slider-4{
+                width: 300px;
+            }
+        }
+
+        .hero-arrows-left{
+            top: 25%;
+        }
+
+        .hero-arrows-right{
+            top: 25%;
         }
 
         .hero-bottom{

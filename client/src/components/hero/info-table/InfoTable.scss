@@ -1,0 +1,46 @@
+.infotable-wrapper{
+    border: red solid;
+    display: grid;
+    grid-template-columns: 10px 1fr 1fr 10px;
+    grid-template-rows: 10px 1fr 1fr 1fr 10px;
+    grid-template-areas: 
+    '. . . .'
+    '. one two .'
+    '. three four .'
+    '. five six .'
+    '. . . .';
+}
+
+.infotable-option{
+    justify-self: center;
+    font-size: .9em;
+    align-self: center;
+    &.one{
+        grid-area: one;
+    }
+
+    &.two{
+        grid-area: two;
+
+    }
+
+    &.three{
+        grid-area: three ;
+
+    }
+
+    &.four{
+        grid-area: four;
+
+    }
+
+    &.five{
+        grid-area: five;
+
+    }
+
+    &.six{
+        grid-area: six;
+
+    }
+}

@@ -1,0 +1,56 @@
+.infotable-wrapper {
+  border: red solid;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10px 1fr 1fr 10px;
+      grid-template-columns: 10px 1fr 1fr 10px;
+  -ms-grid-rows: 10px 1fr 1fr 1fr 10px;
+      grid-template-rows: 10px 1fr 1fr 1fr 10px;
+      grid-template-areas: '. . . .' '. one two .' '. three four .' '. five six .' '. . . .';
+}
+
+.infotable-option {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-size: .9em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.infotable-option.one {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: one;
+}
+
+.infotable-option.two {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: two;
+}
+
+.infotable-option.three {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: three;
+}
+
+.infotable-option.four {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: four;
+}
+
+.infotable-option.five {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: five;
+}
+
+.infotable-option.six {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: six;
+}
+/*# sourceMappingURL=InfoTable.css.map */

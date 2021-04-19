@@ -1,6 +1,7 @@
 import React ,{useState} from 'react';
 import './Hero.css';
 import Indicator from './indicator/Indicator';
+import InfoTable from './info-table/InfoTable';
 import {one, two, three, four, five} from '../../assets/hero-image/index';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
@@ -143,7 +144,7 @@ function Hero(){
                             </div>
 
                             <div className='hero-slider-4 fourth'>
-                                <div>The 2021 Mirai's all-new sleek design is as innovative <br></br> as its engineering.</div>
+                                <div>The 2021 Mirai's all-new sleek design is as innovative as its engineering.</div>
                             </div>
 
                             <div className='hero-description-button-1'>
@@ -171,7 +172,7 @@ function Hero(){
                             </div>
 
                             <div className='hero-slider-4 fifth'>
-                                <div>The ultimate expression of luxury and capability,<br></br>Toyota Land Cruiser is ready to make an impression<br></br>wherever you go.</div>
+                                <div>The ultimate expression of luxury and capability, Toyota Land Cruiser is ready to make an impression wherever you go.</div>
                             </div>
 
                             <div className='hero-description-button-1'>
@@ -198,6 +199,10 @@ function Hero(){
 
             <div className='hero-bottom'>
                 <Indicator index={index} setIndex={setIndex} />
+            </div>
+
+            <div>
+                <InfoTable />
             </div>
 
         </div>
