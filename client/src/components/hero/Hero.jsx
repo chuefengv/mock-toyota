@@ -201,9 +201,9 @@ function Hero(){
                 <Indicator index={index} setIndex={setIndex} />
             </div>
 
-            <div>
+            {/* <div>
                 <InfoTable />
-            </div>
+            </div> */}
 
         </div>
     )

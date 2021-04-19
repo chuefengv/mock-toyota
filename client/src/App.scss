@@ -8,10 +8,11 @@ body{
 .container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto 1fr 1fr 1fr;
     grid-template-areas: 
     "header"
     "hero"
+    "infotable"
     "body-cars"
     "body-info"
     "footer";
@@ -27,6 +28,11 @@ body{
     grid-area: hero;
     border-bottom: rgb(231, 231, 231) solid 1px;
 }
+
+.infotable{
+    grid-area: infotable;
+}
+
 .body-cars{
     grid-area: body-cars;
     border: solid green;
