@@ -1,8 +1,9 @@
 .infotable-wrapper{
-    border: red solid;
+    border-bottom: solid rgb(217, 217, 217) 1px ;
+    border-top: solid rgb(217, 217, 217) 1px ;
     display: grid;
-    grid-template-columns: 10px 1fr 1fr 10px;
-    grid-template-rows: 10px 1fr 1fr 1fr 10px;
+    grid-template-columns: 25px 1fr 1fr 25px;
+    grid-template-rows: 25px 1fr 1fr 1fr 25px;
     grid-template-areas: 
     '. . . .'
     '. one two .'
@@ -12,35 +13,56 @@
 }
 
 .infotable-option{
-    justify-self: center;
     font-size: .9em;
     align-self: center;
+    text-align: center;
+    width: 200px;
+    height: 130px;
+    // padding: 0 0 10px 0;
+
     &.one{
         grid-area: one;
+        border-right: solid rgb(217, 217, 217) 1px ;
+        border-bottom: solid rgb(217, 217, 217) 1px ;
     }
 
     &.two{
         grid-area: two;
-
+        border-bottom: solid rgb(217, 217, 217) 1px ;
     }
 
     &.three{
         grid-area: three ;
-
+        border-right: solid rgb(217, 217, 217) 1px ;
+        border-bottom: solid rgb(217, 217, 217) 1px ;
     }
 
     &.four{
         grid-area: four;
-
+        border-bottom: solid rgb(217, 217, 217) 1px ;
     }
 
     &.five{
         grid-area: five;
-
+        border-right: solid rgb(217, 217, 217) 1px ;
     }
 
     &.six{
         grid-area: six;
 
     }
+}
+
+.infotable-icon{
+    font-size: 3em;
+    padding: 10px;
+    padding: 10px;
+    transition: ease-in .075s;
+    color: rgb(204,0,0);
+}
+
+.infotable-icon:hover{
+    transition: ease-out .075s;
+    scale: 1.2;
+    color: rgb(129, 0, 0);
 }
