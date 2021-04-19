@@ -1,6 +1,5 @@
 .infotable-wrapper{
     border-bottom: solid rgb(217, 217, 217) 1px ;
-    border-top: solid rgb(217, 217, 217) 1px ;
     display: grid;
     grid-template-columns: 25px 1fr 1fr 25px;
     grid-template-rows: 25px 1fr 1fr 1fr 25px;
@@ -66,7 +65,6 @@
 @media only screen and (min-width: 600px){
     .infotable-wrapper{
         border-bottom: solid rgb(217, 217, 217) 1px ;
-        border-top: solid rgb(217, 217, 217) 1px ;
         display: grid;
         grid-template-columns: 25px 1fr 1fr 25px;
         grid-template-rows: 25px 1fr 1fr 25px;
@@ -97,7 +95,6 @@
 @media only screen and (min-width: 950px){
     .infotable-wrapper{
         border-bottom: solid rgb(217, 217, 217) 1px ;
-        border-top: solid rgb(217, 217, 217) 1px ;
         display: grid;
         grid-template-columns: 25px 1fr 1fr 1fr 1fr 25px;
         grid-template-rows: 25px 1fr 25px;

@@ -15,7 +15,7 @@
     }
 
     &.two{
-        grid-template-rows: auto auto auto auto auto auto auto auto auto 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto 1fr;
     }
 
     &.three{
@@ -36,6 +36,7 @@
         p{
             margin: 0;
             font-size: 1.2em;
+            width: 200px;
         }
     }
 
@@ -51,6 +52,16 @@
         justify-content: space-between;
         padding: 20px 0 20px 10px;
         cursor: pointer;
+
+        &.two{
+            display: grid;
+            grid-template-columns: auto 1fr;
+        
+            div{
+                justify-self: baseline;
+                padding: 0 5px 0 5px;
+            }
+        }
     }
 
     .nav-choices-extra{

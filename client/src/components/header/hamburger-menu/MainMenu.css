@@ -21,8 +21,8 @@
 }
 
 .hm-wrapper.two {
-  -ms-grid-rows: auto auto auto auto auto auto auto auto auto 1fr;
-      grid-template-rows: auto auto auto auto auto auto auto auto auto 1fr;
+  -ms-grid-rows: auto auto auto auto auto auto auto auto auto auto auto 1fr;
+      grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto 1fr;
 }
 
 .hm-wrapper.three {
@@ -50,6 +50,7 @@
 .hm-wrapper .nav-title p {
   margin: 0;
   font-size: 1.2em;
+  width: 200px;
 }
 
 .hm-wrapper .nav-choices-arrow-left {
@@ -70,6 +71,18 @@
           justify-content: space-between;
   padding: 20px 0 20px 10px;
   cursor: pointer;
+}
+
+.hm-wrapper .nav-choices.two {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+}
+
+.hm-wrapper .nav-choices.two div {
+  justify-self: baseline;
+  padding: 0 5px 0 5px;
 }
 
 .hm-wrapper .nav-choices-extra {
