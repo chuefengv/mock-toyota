@@ -9,7 +9,7 @@ function InfoTable(){
     const [mobileTable, setMobileTable] = useState((window.innerWidth<600) ? true : false);
 
     useEffect(()=>{
-        function renderNav(){
+        function renderWindow(){
             if(window.innerWidth<600){
                 setMobileTable(true);
             }else{
@@ -17,7 +17,7 @@ function InfoTable(){
             }
         }
 
-        window.addEventListener('resize',renderNav)
+        window.addEventListener('resize',renderWindow)
     },[setMobileTable])
     return(
         <div className='infotable-wrapper'>

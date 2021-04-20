@@ -61,26 +61,28 @@ function Header(){
     return(
         <div className='header-wrapper'>
 
-            {deskNav && <div className='header-secondary'>
-                <div className='header-secondary-select'>
-                    <div>Search <FontAwesomeIcon icon={faSearch} color={'rgb(204, 0, 0)'} ></FontAwesomeIcon></div>
+            {deskNav && 
+                <div className='header-secondary'>
+                    <div className='header-secondary-select'>
+                        <div>Search <FontAwesomeIcon icon={faSearch} color={'rgb(204, 0, 0)'} ></FontAwesomeIcon></div>
+                    </div>
+                    <div className='header-secondary-select'>
+                        <div>FAQ</div>
+                    </div>
+                    <div className='header-secondary-select'>
+                        <div>Certified Used Vehicles</div>
+                    </div>
+                    <div className='header-secondary-select'>
+                        <div>Owners</div>
+                    </div>
+                    <div className='header-secondary-select'>
+                        <div>Español</div>
+                    </div>
+                    <div className='header-secondary-select'>
+                        <div>Your Location: 90210 <FontAwesomeIcon icon={faPencilAlt} color={'rgb(204, 0, 0)'} ></FontAwesomeIcon></div>
+                    </div>
                 </div>
-                <div className='header-secondary-select'>
-                    <div>FAQ</div>
-                </div>
-                <div className='header-secondary-select'>
-                    <div>Certified Used Vehicles</div>
-                </div>
-                <div className='header-secondary-select'>
-                    <div>Owners</div>
-                </div>
-                <div className='header-secondary-select'>
-                    <div>Español</div>
-                </div>
-                <div className='header-secondary-select'>
-                    <div>Your Location: 90210 <FontAwesomeIcon icon={faPencilAlt} color={'rgb(204, 0, 0)'} ></FontAwesomeIcon></div>
-                </div>
-            </div>}
+            }
 
             <div className='header-logo'>
                 <a href='/'>
@@ -90,64 +92,72 @@ function Header(){
                 </a>
             </div>
 
-            {toyotaLogo && <div className='header-toyota'>
-                <a href='/'>
-                    <img src={toyota_big} alt=''></img>   
-                </a>
-            </div>}
+            {toyotaLogo && 
+                <div className='header-toyota'>
+                    <a href='/'>
+                        <img src={toyota_big} alt=''></img>   
+                    </a>
+                </div>
+            }
 
             <div className='header-olympics'>
                 <img src={olympic} alt=''></img>
                 <img src={paralympic} alt=''></img>
             </div>
 
-            {deskNav && <div className='header-nav-two'>
-                <div className='header-nav-two-select'>
-                    <div>Select Tools</div>
-                    <FontAwesomeIcon icon={faChevronDown} color={'rgb(204, 0, 0)'} ></FontAwesomeIcon>
+            {deskNav && 
+                <div className='header-nav-two'>
+                    <div className='header-nav-two-select'>
+                        <div>Select Tools</div>
+                        <FontAwesomeIcon icon={faChevronDown} color={'rgb(204, 0, 0)'} ></FontAwesomeIcon>
 
-                </div>
-                <div className='header-nav-two-select'>
-                    <div>Shopping Tools</div>
-                    <FontAwesomeIcon icon={faChevronDown} color={'rgb(204, 0, 0)'} ></FontAwesomeIcon>
-                </div>
-                <div className='header-nav-two-select'>
-                    <div>Find a Dealer</div>
-                </div>
-                <div className='header-nav-two-select'>
-                    <div>Build & Price</div>
-                </div>
-                <div className='header-nav-two-red'>
-                    <div>
-                        Local Specials
+                    </div>
+                    <div className='header-nav-two-select'>
+                        <div>Shopping Tools</div>
+                        <FontAwesomeIcon icon={faChevronDown} color={'rgb(204, 0, 0)'} ></FontAwesomeIcon>
+                    </div>
+                    <div className='header-nav-two-select'>
+                        <div>Find a Dealer</div>
+                    </div>
+                    <div className='header-nav-two-select'>
+                        <div>Build & Price</div>
+                    </div>
+                    <div className='header-nav-two-red'>
+                        <div>
+                            Local Specials
+                        </div>
                     </div>
                 </div>
-            </div>}
+            }
 
-            {mobNav && <div className='header-nav'>
-                <div className='header-nav-location'>
-                    <img src={location} alt=''></img>
-                    <p>90210</p>
-                </div>
-                <div className='header-nav-ham'>
-                    <Hamburger label="Show menu" size={26} className='header-hamburger' onToggle={()=>menuFunc()}/>
-                </div>
-            </div>}
-
-            {mobNav && <Collapse in={openMenu} timeout={400} className='menu'>
-                <Carousel selectedItem={index} showArrows={false} showIndicators={false} showThumbs={false} showStatus={false}>
-                    <div>
-                        <MenuOne setIndex={setIndex} setMenu01={setMenu01} setMenu02={setMenu02} setMenu03={setMenu03} setMenu04={setMenu04}/>
+            {mobNav && 
+                <div className='header-nav'>
+                    <div className='header-nav-location'>
+                        <img src={location} alt=''></img>
+                        <p>90210</p>
                     </div>
-                    <div>
-                        <LoadedMenu setIndex={setIndex} menu01={menu01} menu02={menu02} menu03={menu03} menu04={menu04} setMenu01={setMenu01} setMenu02={setMenu02} setMenu03={setMenu03} setMenu04={setMenu04}/>
+                    <div className='header-nav-ham'>
+                        <Hamburger label="Show menu" size={26} className='header-hamburger' onToggle={()=>menuFunc()}/>
                     </div>
-                </Carousel>
-            </Collapse>}
+                </div>
+            }
 
-            {deskNav && <Collapse>
+            {mobNav && 
+                <Collapse in={openMenu} timeout={400} className='menu'>
+                    <Carousel selectedItem={index} showArrows={false} showIndicators={false} showThumbs={false} showStatus={false}>
+                        <div>
+                            <MenuOne setIndex={setIndex} setMenu01={setMenu01} setMenu02={setMenu02} setMenu03={setMenu03} setMenu04={setMenu04}/>
+                        </div>
+                        <div>
+                            <LoadedMenu setIndex={setIndex} menu01={menu01} menu02={menu02} menu03={menu03} menu04={menu04} setMenu01={setMenu01} setMenu02={setMenu02} setMenu03={setMenu03} setMenu04={setMenu04}/>
+                        </div>
+                    </Carousel>
+                </Collapse>
+            }
+
+            {/* {deskNav && <Collapse>
             
-            </Collapse>}
+            </Collapse>} */}
 
         </div>
     );

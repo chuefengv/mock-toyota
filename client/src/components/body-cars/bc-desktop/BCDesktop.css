@@ -1,0 +1,28 @@
+.bcdesktop-wrapper {
+  padding: 40px 0 40px 0;
+}
+
+.bcdesktop-header {
+  text-align: center;
+}
+
+.bcdesktop-categories {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bcdesktop-categories-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bcdesktop-categories-wrapper .bcdesktop-categories-option {
+  padding: 0 10px 0 10px;
+  cursor: pointer;
+  color: #59595b;
+}
+/*# sourceMappingURL=BCDesktop.css.map */
