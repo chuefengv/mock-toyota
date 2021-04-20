@@ -1,7 +1,6 @@
 import React ,{useState} from 'react';
 import './Hero.css';
 import Indicator from './indicator/Indicator';
-import InfoTable from './info-table/InfoTable';
 import {one, two, three, four, five} from '../../assets/hero-image/index';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
