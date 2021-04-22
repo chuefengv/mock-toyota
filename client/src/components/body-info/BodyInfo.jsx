@@ -1,5 +1,6 @@
 import React from 'react';
 import './BodyInfo.css';
+import OptionOne from './option-one/OptionOne';
 
 function BodyInfo(){
     return(
@@ -24,6 +25,8 @@ function BodyInfo(){
                 </li>
             </ul>
 
+            <OptionOne />
+            
         </div>
     )
 }

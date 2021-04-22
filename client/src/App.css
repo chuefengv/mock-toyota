@@ -9,8 +9,8 @@ body {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: auto 1fr auto auto 1fr 1fr;
-      grid-template-rows: auto 1fr auto auto 1fr 1fr;
+  -ms-grid-rows: auto auto auto auto 1fr 1fr;
+      grid-template-rows: auto auto auto auto 1fr 1fr;
       grid-template-areas: "header" "hero" "infotable" "body-cars" "body-info" "footer";
   min-height: 100vh;
   font-family: 'Roboto', sans-serif;
@@ -51,6 +51,5 @@ body {
   -ms-grid-row: 6;
   -ms-grid-column: 1;
   grid-area: footer;
-  border: solid red;
 }
 /*# sourceMappingURL=App.css.map */
