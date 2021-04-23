@@ -16,8 +16,8 @@
       justify-self: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
   width: 100vw;
   height: 40px;
   max-width: 700px;
@@ -40,12 +40,14 @@
 
 .bodyinfo-selected {
   border-bottom: #cc0000 solid 2px;
+  padding: 0 0 5px 0;
 }
 
 .bodyinfo-unselected {
   -webkit-animation: fadeout .2s;
           animation: fadeout .2s;
   color: #777777;
+  padding: 0 0 5px 0;
 }
 
 .bodyinfo-unselected:hover {
@@ -60,7 +62,7 @@
     border-bottom: rgba(204, 0, 0, 0) solid 2px;
   }
   to {
-    padding: 0;
+    padding: 0 0 5px 0;
     border-bottom: #cc0000 solid 2px;
   }
 }
@@ -71,14 +73,14 @@
     border-bottom: rgba(204, 0, 0, 0) solid 2px;
   }
   to {
-    padding: 0;
+    padding: 0 0 5px 0;
     border-bottom: #cc0000 solid 2px;
   }
 }
 
 @-webkit-keyframes fadeout {
   from {
-    padding: 0;
+    padding: 0 0 5px 0;
     border-bottom: #cc0000 solid 2px;
   }
   to {
@@ -89,7 +91,7 @@
 
 @keyframes fadeout {
   from {
-    padding: 0;
+    padding: 0 0 5px 0;
     border-bottom: #cc0000 solid 2px;
   }
   to {

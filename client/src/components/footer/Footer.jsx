@@ -3,8 +3,10 @@ import './Footer.css';
 
 function Footer(){
     return(
-        <div>
-            Footer
+        <div className='footer-wrapper'>
+            <div>
+                footer
+            </div>
         </div>
     )
 }
