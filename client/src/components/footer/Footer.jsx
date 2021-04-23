@@ -1,12 +1,11 @@
 import React from 'react';
 import './Footer.css';
+import MobFooter from './mobfooter/MobFooter'
 
 function Footer(){
     return(
         <div className='footer-wrapper'>
-            <div>
-                footer
-            </div>
+            <MobFooter />
         </div>
     )
 }
