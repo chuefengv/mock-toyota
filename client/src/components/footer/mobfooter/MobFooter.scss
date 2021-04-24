@@ -1,0 +1,121 @@
+.mf-button-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: rgb(37, 37, 37);
+}
+
+.mf-button{
+    justify-self: center;
+
+    &.red{
+        padding: 15px 0 10px 0;
+        button{
+            background-color: rgb(204, 0, 0);
+            border: rgb(204, 0, 0) solid;
+            color: rgb(243, 243, 243);
+        }
+    }
+
+    &.white{
+        padding: 10px 0 15px 0;
+        button{
+            background-color: rgb(237, 240, 245);
+            border: rgb(237, 240, 245) solid;
+            color: rgb(37, 37, 37);
+        }
+    }
+
+    button{
+        width: 90vw;
+        height: 50px;
+        border-radius: 50px;
+        cursor: pointer;
+        font-size: .8em;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .mf-button-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .mf-button{
+        justify-self: center;
+    
+        &.red{
+            padding: 15px 0 15px 0;
+            button{
+                background-color: rgb(204, 0, 0);
+                border: rgb(204, 0, 0) solid;
+                color: rgb(243, 243, 243);
+            }
+        }
+    
+        &.white{
+            padding: 15px 0 15px 0;
+            button{
+                background-color: rgb(237, 240, 245);
+                border: rgb(237, 240, 245) solid;
+                color: rgb(37, 37, 37);
+            }
+        }
+    
+        button{
+            width: 45vw;
+            height: 50px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: .8em;
+        }
+    }
+}
+
+//-------
+
+.mf-accordion-summary{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+    width: 100%;
+    .mf-accordion-icon{
+        transition: .15s;
+        rotate: (0deg);
+    }
+}
+
+.mf-accordion-summary-selected{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+    width: 100%;
+
+    .mf-accordion-icon{
+        rotate: (45deg);
+        transition: .15s;
+    }
+}
+
+.mf-accordion-icon{
+    color: rgb(204, 0, 0);
+}
+
+.mf-accordion-details{
+    display: grid;
+    grid-template-columns: 15px 1fr 15px;
+    width: 100%;
+}
+
+.mf-accordion-option{
+    grid-column: 2/3;
+    height: 60px;
+    display: grid;
+    align-content: center;
+    border-bottom: dotted rgba(37, 37, 37, 0.151) 1px;
+}
+
+//-----
+
+.mf-footer-wrapper{
+    
+}
