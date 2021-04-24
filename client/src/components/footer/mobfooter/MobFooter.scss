@@ -117,5 +117,33 @@
 //-----
 
 .mf-footer-wrapper{
-    
+    display: grid;
+}
+
+.mf-footer-logos{
+    justify-self: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto 1fr;
+    padding: 20px 0 0 0;
+
+    .mf-footer-toyota-logo{
+        align-self: center;
+        background-color: red;
+        width: 40px;
+        height: 40px;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .mf-footer-toyota-text{
+        align-self: center;
+        border-right: black solid 1px;
+    }
+
+    .mf-footer-title{
+        grid-column: 1/6;
+        justify-self: center;
+        font-size: .8em;
+    }
 }

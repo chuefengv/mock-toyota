@@ -6,10 +6,10 @@ import MuiAccordionDetails from '@material-ui/core/AccordionDetails';
 import MuiAccordionSummary from '@material-ui/core/AccordionSummary';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
-import toyota from '../../assets/toyota.svg';
-import olympic from '../../assets/olympic.svg'
-import paralympic from '../../assets/paralympic.svg'
-import toyota_big from '../../assets/toyota_big.svg'
+import toyota from '../../../assets/toyota.svg';
+import olympic from '../../../assets/olympic.svg'
+import paralympic from '../../../assets/paralympic.svg'
+import toyota_big from '../../../assets/toyota_big.svg'
 
 const Accordion = withStyles({
     root: {
@@ -53,7 +53,6 @@ const Accordion = withStyles({
     root: {
       color: 'black',
       backgroundColor: 'white',
-      padding: theme.spacing(2),
       padding: '0',
     },
   }))(MuiAccordionDetails);
@@ -324,20 +323,33 @@ function MobFooter(){
             </div>
 
             <div className='mf-footer-wrapper'>
+
                 <div className='mf-footer-logos'>
-                    <div>
-                        Toyota
+                    <div className='mf-footer-toyota-logo'>
+                        <img src={toyota} alt=''></img>
                     </div>
-                    <div>
+                    <div className='mf-footer-toyota-text'>
+                        <img src={toyota_big} alt=''></img>
+                    </div>
+                    <div className='mf-footer-olympic'>
+                        <img src={olympic} alt=''></img>
+                    </div>
+                    <div className='mf-footer-paralympic'>
+                        <img src={paralympic} alt=''></img>             
+                    </div>
+                    <div className='mf-footer-title'>
                         Proud Mobility Partner
                     </div>
                 </div>
+
                 <div className='mf-footer-socials'>
 
                 </div>
+
                 <div className='mf-footer-info'>
 
                 </div>
+
             </div>
         </div>
     )

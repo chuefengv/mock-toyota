@@ -138,4 +138,50 @@
       align-content: center;
   border-bottom: dotted rgba(37, 37, 37, 0.151) 1px;
 }
+
+.mf-footer-wrapper {
+  display: -ms-grid;
+  display: grid;
+}
+
+.mf-footer-logos {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto 1fr;
+      grid-template-columns: auto auto auto auto 1fr;
+  padding: 20px 0 0 0;
+}
+
+.mf-footer-logos .mf-footer-toyota-logo {
+  -ms-grid-row-align: center;
+      align-self: center;
+  background-color: red;
+  width: 40px;
+  height: 40px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.mf-footer-logos .mf-footer-toyota-text {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-right: black solid 1px;
+}
+
+.mf-footer-logos .mf-footer-title {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1/6;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-size: .8em;
+}
 /*# sourceMappingURL=MobFooter.css.map */
