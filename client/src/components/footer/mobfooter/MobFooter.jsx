@@ -10,6 +10,7 @@ import toyota from '../../../assets/toyota.svg';
 import olympic from '../../../assets/olympic.svg'
 import paralympic from '../../../assets/paralympic.svg'
 import toyota_big from '../../../assets/toyota_big.svg'
+import {facebook, twitter, youtube, instagram, pinterest} from '../../../assets/socials/index'
 
 const Accordion = withStyles({
     root: {
@@ -343,7 +344,11 @@ function MobFooter(){
                 </div>
 
                 <div className='mf-footer-socials'>
-
+                    <img src={facebook} alt=''></img>
+                    <img src={youtube} alt=''></img>
+                    <img src={twitter} alt=''></img>
+                    <img src={instagram} alt=''></img>
+                    <img src={pinterest} alt=''></img>
                 </div>
 
                 <div className='mf-footer-info'>
