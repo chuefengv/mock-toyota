@@ -352,7 +352,32 @@ function MobFooter(){
                 </div>
 
                 <div className='mf-footer-info'>
-
+                    <div className='mf-footer-one'>
+                        <p>DO NOT SELL MY PERSONAL INFORMATION</p>
+                    </div>
+                    <div className='mf-footer-two'>
+                        <p>Cookie Consent Options</p>
+                    </div>
+                    <div className='mf-footer-three'>
+                            <div className='mf-footer-three-1'>
+                                <p>Privacy Policy</p>
+                            </div>
+                            <div className='mf-footer-three-2'>
+                                <p>California Privacy</p>
+                            </div>
+                            <div className='mf-footer-three-3'>
+                                <p>Legal Terms</p>
+                            </div>
+                            <div className='mf-footer-three-4'>
+                                <p>Site Map</p>
+                            </div>
+                    </div>
+                    <div className='mf-footer-four'>
+                        <p>©2021 Toyota Motor Sales, U.S.A., Inc. All information applies to U.S. vehicles only. The use of Olympic Marks, Terminology and Imagery is authorized by the U.S. Olympic & Paralympic Committee pursuant to Title 36 U.S. Code Section 220506.</p>
+                    </div>
+                    <div className='mf-footer-five'>
+                        <p>[#] View All Disclosures</p>
+                    </div>
                 </div>
 
             </div>
