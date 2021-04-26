@@ -6,13 +6,37 @@
 
 .df-searchbar{
     border-bottom: rgb(229, 231, 235) solid 2px;
+    padding: 20px 0 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.df-searchbar-search{
+    margin-right: 50px;
 }
 
 .df-searchbar-search-icon{
     color: rgb(204, 0,0);
+    font-size: 2.3em;
+}
+
+.df-searchbar-socials{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    img{
+        margin: 0 5px 0 5px;
+        cursor: pointer;
+    }
 }
 
 input{
-    border: solid red 1px ;
+    border: none ;
     outline: none;
+    background-color: rgb(237, 240, 245);
+    color: rgb(159,159,159);
+    font-size: 2.1em;
+    margin: 0 0 0 20px;
+    width: 350px;
 }

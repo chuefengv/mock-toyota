@@ -6,14 +6,50 @@
 
 .df-searchbar {
   border-bottom: #e5e7eb solid 2px;
+  padding: 20px 0 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.df-searchbar-search {
+  margin-right: 50px;
 }
 
 .df-searchbar-search-icon {
   color: #cc0000;
+  font-size: 2.3em;
+}
+
+.df-searchbar-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 50px;
+}
+
+.df-searchbar-socials img {
+  margin: 0 5px 0 5px;
+  cursor: pointer;
 }
 
 input {
-  border: solid red 1px;
+  border: none;
   outline: none;
+  background-color: #edf0f5;
+  color: #9f9f9f;
+  font-size: 2.1em;
+  margin: 0 0 0 20px;
+  width: 350px;
 }
 /*# sourceMappingURL=DeskFooter.css.map */
