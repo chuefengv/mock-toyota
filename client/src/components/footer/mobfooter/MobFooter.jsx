@@ -82,7 +82,7 @@ function MobFooter(){
                 <Accordion square onClick={()=>setExpandOne(!expandOne)}>
                     <AccordionSummary>
                         <div className={expandOne !== true ? 'mf-accordion-summary two' : 'mf-accordion-summary-selected'}>
-                            <div>Helpful Links</div>
+                            <div>Shopping Tools</div>
                             <FontAwesomeIcon icon={faPlus} className='mf-accordion-icon'></FontAwesomeIcon>
                         </div>
                     </AccordionSummary>
@@ -188,7 +188,7 @@ function MobFooter(){
                 <Accordion square onClick={()=>setExpandTwo(!expandTwo)}>                
                     <AccordionSummary>
                         <div className={expandTwo !== true ? 'mf-accordion-summary one' : 'mf-accordion-summary-selected'}>
-                            <div>Shopping Tools</div>
+                            <div>Helpful Links</div>
                             <FontAwesomeIcon icon={faPlus} className='mf-accordion-icon'></FontAwesomeIcon>
                         </div>
                     </AccordionSummary>

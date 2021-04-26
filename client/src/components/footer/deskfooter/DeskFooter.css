@@ -1,0 +1,19 @@
+.df-wrapper {
+  height: 600px;
+  border: solid red;
+  background-color: #edf0f5;
+}
+
+.df-searchbar {
+  border-bottom: #e5e7eb solid 2px;
+}
+
+.df-searchbar-search-icon {
+  color: #cc0000;
+}
+
+input {
+  border: solid red 1px;
+  outline: none;
+}
+/*# sourceMappingURL=DeskFooter.css.map */

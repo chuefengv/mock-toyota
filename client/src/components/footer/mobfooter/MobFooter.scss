@@ -162,9 +162,10 @@
 }
 
 .mf-footer-info{
+    margin-bottom: 15px;
     .mf-footer-one{
         color: rgb(204, 0, 0);
-        padding: 20px 0 0 15px;
+        padding: 20px 0 0 25px;
         cursor: pointer;
 
         :hover{
@@ -173,7 +174,7 @@
     }
     .mf-footer-two{
         font-size: .8em;
-        padding: 0 0 0 15px;
+        padding: 0 0 0 25px;
         cursor: pointer;
         color: rgb(140, 140, 140);
 
@@ -182,7 +183,7 @@
         font-size: .8em;
         display: flex;
         flex-direction: row;
-        padding: 15px 0 5px 5px;
+        padding: 15px 0 5px 15px;
         color: rgb(140, 140, 140);
 
         .mf-footer-three-1{
@@ -207,7 +208,7 @@
     }
     .mf-footer-four{
         font-size: .7em;
-        padding: 0 15px 0 15px;
+        padding: 0 25px 0 25px;
         color: rgb(140, 140, 140);
         p{
             line-height: 2;
@@ -215,7 +216,7 @@
     }
     .mf-footer-five{
         font-size: .8em;
-        padding: 0 0 0 15px;
+        padding: 0 0 0 25px;
         cursor: pointer;
         color: rgb(204, 0, 0);
         

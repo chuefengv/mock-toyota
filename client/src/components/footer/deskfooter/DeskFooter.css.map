@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAA;EACP,MAAM,EAAE,KAAK;EACb,MAAM,EAAE,SAAS;EACjB,gBAAgB,EAAE,OAAkB;CACvC;;AAED,AAAA,aAAa,CAAA;EACT,aAAa,EAAE,OAAkB,CAAC,KAAK,CAAC,GAAG;CAC9C;;AAED,AAAA,yBAAyB,CAAA;EACrB,KAAK,EAAE,OAAa;CACvB;;AAED,AAAA,KAAK,CAAA;EACD,MAAM,EAAE,aAAc;EACtB,OAAO,EAAE,IAAI;CAChB",
+    "sources": [
+        "DeskFooter.scss"
+    ],
+    "names": [],
+    "file": "DeskFooter.css"
+}

@@ -202,9 +202,13 @@
   cursor: pointer;
 }
 
+.mf-footer-info {
+  margin-bottom: 15px;
+}
+
 .mf-footer-info .mf-footer-one {
   color: #cc0000;
-  padding: 20px 0 0 15px;
+  padding: 20px 0 0 25px;
   cursor: pointer;
 }
 
@@ -214,7 +218,7 @@
 
 .mf-footer-info .mf-footer-two {
   font-size: .8em;
-  padding: 0 0 0 15px;
+  padding: 0 0 0 25px;
   cursor: pointer;
   color: #8c8c8c;
 }
@@ -228,7 +232,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 15px 0 5px 5px;
+  padding: 15px 0 5px 15px;
   color: #8c8c8c;
 }
 
@@ -258,7 +262,7 @@
 
 .mf-footer-info .mf-footer-four {
   font-size: .7em;
-  padding: 0 15px 0 15px;
+  padding: 0 25px 0 25px;
   color: #8c8c8c;
 }
 
@@ -268,7 +272,7 @@
 
 .mf-footer-info .mf-footer-five {
   font-size: .8em;
-  padding: 0 0 0 15px;
+  padding: 0 0 0 25px;
   cursor: pointer;
   color: #cc0000;
 }
