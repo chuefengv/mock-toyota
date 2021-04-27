@@ -1,19 +1,21 @@
 .df-wrapper{
-    height: 600px;
-    border: solid red;
     background-color: rgb(237, 240, 245);
+    display: grid;
 }
 
-.df-searchbar{
+.df-searchbar-wrapper{
     border-bottom: rgb(229, 231, 235) solid 2px;
     padding: 20px 0 20px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    max-width: 950px;
+    width: 100vw;
+    justify-self: center;
 }
 
 .df-searchbar-search{
-    margin-right: 50px;
+    align-self: center;
 }
 
 .df-searchbar-search-icon{
@@ -24,7 +26,6 @@
 .df-searchbar-socials{
     display: flex;
     flex-direction: row;
-    margin-left: 50px;
     img{
         margin: 0 5px 0 5px;
         cursor: pointer;
@@ -39,4 +40,95 @@ input{
     font-size: 2.1em;
     margin: 0 0 0 20px;
     width: 350px;
+}
+
+.df-footer-logos{
+    justify-self: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto 1fr;
+    padding: 20px 0 20px 0;
+
+    .df-footer-toyota-logo{
+        align-self: center;
+        background-color: red;
+        width: 40px;
+        height: 40px;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .df-footer-toyota-text{
+        align-self: center;
+        border-right: black solid 1px;
+        margin: 0 5px 0 0;
+    }
+
+    .df-footer-olympic{
+        padding: 3px 0 0 0;
+    }
+
+    .df-footer-paralympic{
+        padding: 3px 0 0 0;
+    }
+
+    .df-footer-title{
+        padding: 10px 0 0 0;
+        grid-column: 1/6;
+        justify-self: center;
+        font-size: .8em;
+    }
+}
+
+.df-subinfo{
+    justify-self: center;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 950px;
+    width: 100vw;
+
+    .df-subinfo-one{
+        grid-column: 1/2;
+        grid-template-rows: 1/2;
+        padding: 10px 20px 10px 20px;
+        color: rgb(88, 88, 88);
+        font-size: 1.2em;
+        cursor: pointer;
+        .df-subinfo-one-icon{
+            color: rgb(204, 0,0);
+            margin: 0 10px 0 0;
+        }
+    }
+
+    .df-subinfo-one:hover{
+        color: rgb(204,0,0);
+    }
+
+    .df-subinfo-two{
+        grid-column: 2/3;
+        grid-template-rows: 1/2;
+        justify-self: end;
+        padding: 10px 20px 10px 20px;
+        color: rgb(204, 0,0);
+        font-size: 1.1em;
+        cursor: pointer;
+    }
+
+    .df-subinfo-two:hover{
+        color: rgb(133,25,16);
+    }
+
+    .df-subinfo-three{
+        grid-column: 2/3;
+        grid-template-rows: 2/3;
+        justify-self: end;
+        padding: 10px 20px 10px 20px;
+        color: rgb(88, 88, 88);
+        cursor: pointer;
+    }
+
+    .df-subinfo-three:hover{
+        color: rgb(204,0,0);
+    }
 }

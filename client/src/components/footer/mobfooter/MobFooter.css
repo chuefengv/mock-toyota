@@ -177,6 +177,14 @@
   margin: 0 5px 0 0;
 }
 
+.mf-footer-logos .mf-footer-olympic {
+  padding: 2px 0 0 0;
+}
+
+.mf-footer-logos .mf-footer-paralympic {
+  padding: 2px 0 0 0;
+}
+
 .mf-footer-logos .mf-footer-title {
   padding: 10px 0 0 0;
   -ms-grid-column: 1;

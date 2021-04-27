@@ -1,0 +1,24 @@
+.desklinks-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    color: rgb(51,51,51);
+    width: 100vw;
+    max-width: 950px;
+    justify-self: center;
+}
+
+.desklinks-section-title{
+    font-weight: bold;
+    padding: 30px 20px 5px 20px;
+}
+
+.desklinks-option{
+    padding: 5px 20px 5px 20px;
+    color: rgb(88, 88, 88);
+    cursor: pointer;
+}
+
+.desklinks-option:hover{
+    color: rgb(204,0,0);
+}

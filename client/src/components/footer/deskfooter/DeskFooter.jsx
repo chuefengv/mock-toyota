@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
 import './DeskFooter.css';
+import DeskLinks from './desklinks/DeskLinks';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faNewspaper } from '@fortawesome/free-solid-svg-icons';
 import {facebook, twitter, youtube, instagram, pinterest} from '../../../assets/socials/index'
+import toyota from '../../../assets/toyota.svg';
+import olympic2 from '../../../assets/olympic2.svg'
+import paralympic2 from '../../../assets/paralympic2.svg'
+import toyota_big from '../../../assets/toyota_big.svg'
 
 function DeskFooter(){
 
@@ -11,7 +16,7 @@ function DeskFooter(){
     return(
         <div className='df-wrapper'>
 
-            <div className='df-searchbar'>
+            <div className='df-searchbar-wrapper'>
                 <div className='df-searchbar-search'>
                     <FontAwesomeIcon icon={faSearch} className='df-searchbar-search-icon'></FontAwesomeIcon>
                     <input type='search' placeholder='Type here to search'>
@@ -26,21 +31,38 @@ function DeskFooter(){
                 </div>
             </div>
 
-            <div className='df-logos'>
-
+            <div className='df-footer-logos'>
+                    <div className='df-footer-toyota-logo'>
+                        <img src={toyota} alt=''></img>
+                    </div>
+                    <div className='df-footer-toyota-text'>
+                        <img src={toyota_big} alt=''></img>
+                    </div>
+                    <div className='df-footer-olympic'>
+                        <img src={olympic2} alt=''></img>
+                    </div>
+                    <div className='df-footer-paralympic'>
+                        <img src={paralympic2} alt=''></img>             
+                    </div>
+                    <div className='df-footer-title'>
+                        Proud Mobility Partner
+                    </div>
             </div>
 
-            <div>
-
+            <div className='df-subinfo'>
+                <div className='df-subinfo-one'>
+                    <FontAwesomeIcon icon={faNewspaper} className='df-subinfo-one-icon'></FontAwesomeIcon>
+                    Sign Up For Toyota Updates
+                </div>
+                <div className='df-subinfo-two'>
+                    DO NOT SELL MY PERSONAL INFORMATION
+                </div>
+                <div className='df-subinfo-three'>
+                    Cookie Consent Options
+                </div>
             </div>
 
-            <div>
-
-            </div>
-
-            <div>
-
-            </div>
+            <DeskLinks />
 
         </div>
     )

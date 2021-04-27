@@ -1,10 +1,10 @@
 .df-wrapper {
-  height: 600px;
-  border: solid red;
   background-color: #edf0f5;
+  display: -ms-grid;
+  display: grid;
 }
 
-.df-searchbar {
+.df-searchbar-wrapper {
   border-bottom: #e5e7eb solid 2px;
   padding: 20px 0 20px 0;
   display: -webkit-box;
@@ -16,10 +16,15 @@
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  max-width: 950px;
+  width: 100vw;
+  justify-self: center;
 }
 
 .df-searchbar-search {
-  margin-right: 50px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .df-searchbar-search-icon {
@@ -35,7 +40,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-left: 50px;
 }
 
 .df-searchbar-socials img {
@@ -51,5 +55,125 @@ input {
   font-size: 2.1em;
   margin: 0 0 0 20px;
   width: 350px;
+}
+
+.df-footer-logos {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto 1fr;
+      grid-template-columns: auto auto auto auto 1fr;
+  padding: 20px 0 20px 0;
+}
+
+.df-footer-logos .df-footer-toyota-logo {
+  -ms-grid-row-align: center;
+      align-self: center;
+  background-color: red;
+  width: 40px;
+  height: 40px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.df-footer-logos .df-footer-toyota-text {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-right: black solid 1px;
+  margin: 0 5px 0 0;
+}
+
+.df-footer-logos .df-footer-olympic {
+  padding: 3px 0 0 0;
+}
+
+.df-footer-logos .df-footer-paralympic {
+  padding: 3px 0 0 0;
+}
+
+.df-footer-logos .df-footer-title {
+  padding: 10px 0 0 0;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1/6;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-size: .8em;
+}
+
+.df-subinfo {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  max-width: 950px;
+  width: 100vw;
+}
+
+.df-subinfo .df-subinfo-one {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-rows: 1/2;
+      grid-template-rows: 1/2;
+  padding: 10px 20px 10px 20px;
+  color: #585858;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.df-subinfo .df-subinfo-one .df-subinfo-one-icon {
+  color: #cc0000;
+  margin: 0 10px 0 0;
+}
+
+.df-subinfo .df-subinfo-one:hover {
+  color: #cc0000;
+}
+
+.df-subinfo .df-subinfo-two {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-rows: 1/2;
+      grid-template-rows: 1/2;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  padding: 10px 20px 10px 20px;
+  color: #cc0000;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.df-subinfo .df-subinfo-two:hover {
+  color: #851910;
+}
+
+.df-subinfo .df-subinfo-three {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-rows: 2/3;
+      grid-template-rows: 2/3;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  padding: 10px 20px 10px 20px;
+  color: #585858;
+  cursor: pointer;
+}
+
+.df-subinfo .df-subinfo-three:hover {
+  color: #cc0000;
 }
 /*# sourceMappingURL=DeskFooter.css.map */

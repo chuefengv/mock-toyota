@@ -87,96 +87,42 @@ function MobFooter(){
                         </div>
                     </AccordionSummary>
 
+
                     <AccordionDetails>
                         <div className='mf-accordion-details'>
                             <div className='mf-accordion-option'>
                                 Trade-In Value
                             </div>
-                        </div>
-                    </AccordionDetails>
-
-                    <AccordionDetails>
-                        <div className='mf-accordion-details'>
                             <div className='mf-accordion-option'>
                                 Build Your Toyota
                             </div>
-                        </div>
-                    </AccordionDetails>
-
-                    <AccordionDetails>
-                        <div className='mf-accordion-details'>
                             <div className='mf-accordion-option'>
                                 Search Inventory
-                            </div>
-                        </div>
-                    </AccordionDetails>
-
-                    <AccordionDetails>
-                        <div className='mf-accordion-details'>
+                            </div>                
                             <div className='mf-accordion-option'>
                                 Find a Dealer
-                            </div>
-                        </div>
-                    </AccordionDetails>
-
-                    <AccordionDetails>
-                        <div className='mf-accordion-details'>
+                            </div>                    
                             <div className='mf-accordion-option'>
                                 Local Specials
                             </div>
-                        </div>
-                    </AccordionDetails>
-
-                    <AccordionDetails>
-                        <div className='mf-accordion-details'>
                             <div className='mf-accordion-option'>
                                 What Fits My Budget
-                            </div>
-                        </div>
-                    </AccordionDetails>
-
-                    <AccordionDetails>
-                        <div className='mf-accordion-details'>
+                            </div>                   
                             <div className='mf-accordion-option'>
                                 Payment Estimator
-                            </div>
-                        </div>
-                    </AccordionDetails>
-
-                    <AccordionDetails>
-                        <div className='mf-accordion-details'>
+                            </div>                   
                             <div className='mf-accordion-option'>
                                 Request a Quote
-                            </div>
-                        </div>
-                    </AccordionDetails>
-
-                    <AccordionDetails>
-                        <div className='mf-accordion-details'>
+                            </div>                    
                             <div className='mf-accordion-option'>
                                 Accesories
-                            </div>
-                        </div>
-                    </AccordionDetails>
-
-                    <AccordionDetails>
-                        <div className='mf-accordion-details'>
+                            </div>                    
                             <div className='mf-accordion-option'>
                                 Find Your Match
-                            </div>
-                        </div>
-                    </AccordionDetails>
-
-                    <AccordionDetails>
-                        <div className='mf-accordion-details'>
+                            </div>                   
                             <div className='mf-accordion-option'>
                                 Toyota Certified Used Vehicles
-                            </div>
-                        </div>
-                    </AccordionDetails>
-
-                    <AccordionDetails>
-                        <div className='mf-accordion-details'>
+                            </div>                    
                             <div className='mf-accordion-option'>
                                 Buy Parts & Accesories
                             </div>
