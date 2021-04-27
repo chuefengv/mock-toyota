@@ -64,6 +64,34 @@ function DeskFooter(){
 
             <DeskLinks />
 
+            <div className='df-bottom-wrapper'>
+                <div className='df-bottom'>
+                    <div className='df-policy'>
+                        <div className='df-policy-one'>
+                            <p>Privacy Policy</p>
+                        </div>
+                        <div className='df-policy-two'>
+                            <p>California Privacy</p>
+                        </div>
+                        <div className='df-policy-three'>
+                            <p>Legal Terms</p>
+                        </div>
+                        <div className='df-policy-four'>
+                            <p>Site Map</p>
+                        </div>
+                    </div>
+                    <div className='df-disclosure'>
+                        [#] View All Disclosures
+                    </div>
+                    <div className='df-copyright'>
+                        ©2021 Toyota Motor Sales, U.S.A., Inc. All information applies to U.S. vehicles only. 
+                    </div>
+                    <div className='df-olympic'>
+                        The use of Olympic Marks, Terminology and Imagery is authorized by the U.S. Olympic & Paralympic Committee pursuant to Title 36 U.S. Code Section 220506.
+                    </div>
+                </div>  
+            </div>
+
         </div>
     )
 }

@@ -22,6 +22,7 @@
   padding: 5px 20px 5px 20px;
   color: #585858;
   cursor: pointer;
+  font-size: .9em;
 }
 
 .desklinks-option:hover {
@@ -39,7 +40,7 @@
             flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    max-height: 750px;
+    max-height: 700px;
   }
   .desklinks-section.one {
     -webkit-box-ordinal-group: 2;
