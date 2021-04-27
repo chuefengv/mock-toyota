@@ -10,6 +10,7 @@
   max-width: 950px;
   -ms-grid-column-align: center;
       justify-self: center;
+  margin: 0 0 40px 0;
 }
 
 .desklinks-section-title {
@@ -25,5 +26,50 @@
 
 .desklinks-option:hover {
   color: #cc0000;
+}
+
+@media only screen and (min-width: 1100px) {
+  .desklinks-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-height: 750px;
+  }
+  .desklinks-section.one {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .desklinks-section.two {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .desklinks-section.three {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .desklinks-section.four {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+  .desklinks-section.five {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+  .desklinks-section.six {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
 }
 /*# sourceMappingURL=DeskLinks.css.map */

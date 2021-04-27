@@ -4,7 +4,7 @@ import './DeskLinks.css';
 function DeskLinks(){
     return(
         <div className='desklinks-wrapper'>
-            <div className='desklinks-section'>
+            <div className='desklinks-section one'>
                 <div className='desklinks-section-title'>
                     Shopping Tools
                 </div>
@@ -46,7 +46,7 @@ function DeskLinks(){
                 </div>
             </div>
 
-            <div className='desklinks-section'>
+            <div className='desklinks-section two'>
                 <div className='desklinks-section-title'>
                     Vehicles
                 </div>
@@ -86,7 +86,7 @@ function DeskLinks(){
                 
             </div>
 
-            <div className='desklinks-section'>
+            <div className='desklinks-section three'>
                 <div className='desklinks-section-title'>
                     Helpful Links
                 </div>
@@ -136,7 +136,7 @@ function DeskLinks(){
                     Car Tips & Advice
                 </div>
             </div>
-            <div className='desklinks-section'>
+            <div className='desklinks-section four'>
                 <div className='desklinks-section-title'>
                     About Toyota
                 </div>
@@ -165,7 +165,7 @@ function DeskLinks(){
                     Toyota Plant Tours
                 </div>
             </div>
-            <div className='desklinks-section'>
+            <div className='desklinks-section five'>
                 <div className='desklinks-section-title'>
                     Language
                 </div>
@@ -173,7 +173,7 @@ function DeskLinks(){
                     Español
                 </div>
             </div>
-            <div className='desklinks-section'>
+            <div className='desklinks-section six'>
                 <div className='desklinks-section-title'>
                     Help
                 </div>
