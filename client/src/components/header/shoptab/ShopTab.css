@@ -24,16 +24,24 @@
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   border-right: #d9d9d9 solid 1px;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  width: 40vw;
+  max-width: 500px;
+  padding: 0 30px 0 0;
 }
 
 .shoptab-icons-wrapper .shoptab-option {
+  -ms-grid-row-align: center;
+      align-self: center;
   font-size: 1em;
   display: -ms-grid;
   display: grid;
+  cursor: pointer;
 }
 
 .shoptab-icons-wrapper .shoptab-option.one {
-  margin: 10px 0 10px 0;
+  margin: 10px 20px 10px 0;
   -ms-grid-column-align: center;
       justify-self: center;
 }
@@ -45,9 +53,13 @@
 }
 
 .shoptab-icons-wrapper .shoptab-option.three {
-  margin: 10px 0 10px 0;
+  margin: 10px 20px 10px 0;
   -ms-grid-column-align: center;
       justify-self: center;
+}
+
+.shoptab-icons-wrapper .shoptab-option.three p {
+  text-align: center;
 }
 
 .shoptab-icons-wrapper .shoptab-option.four {
@@ -107,6 +119,7 @@
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   font-size: .9em;
   max-width: 500px;
+  color: #595959;
 }
 
 .shoptab-links-wrapper .shoptab-links-option {
@@ -114,5 +127,10 @@
       -ms-grid-row-align: center;
       align-self: center;
   padding-left: 30px;
+  cursor: pointer;
+}
+
+.shoptab-links-wrapper .shoptab-links-option:hover {
+  color: #f00000;
 }
 /*# sourceMappingURL=ShopTab.css.map */
