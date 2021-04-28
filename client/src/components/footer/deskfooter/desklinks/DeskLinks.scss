@@ -1,7 +1,7 @@
 .desklinks-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr auto;
     color: rgb(51,51,51);
     width: 100vw;
     max-width: 950px;
