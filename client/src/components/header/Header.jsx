@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css';
+import ShopTab from './shoptab/ShopTab';
 import toyota from '../../assets/toyota.svg';
 import olympic from '../../assets/olympic.svg'
 import paralympic from '../../assets/paralympic.svg'
@@ -19,6 +20,8 @@ import { Carousel } from 'react-responsive-carousel';
 function Header(){
 
     const [openMenu, setOpenMenu] = useState(false);
+    const [openSelect, setOpenSelect] = useState(false);
+    const [openShop, setOpenShop] = useState(false);
     const [index, setIndex] = useState(0);
     const [deskNav, setDeskNav] = useState((window.innerWidth>=837) ? true : false);
     const [mobNav, setMobNav] = useState((window.innerWidth<837) ? true: false);
@@ -62,24 +65,26 @@ function Header(){
         <div className='header-wrapper'>
 
             {deskNav && 
-                <div className='header-secondary'>
-                    <div className='header-secondary-select'>
-                        <div>Search <FontAwesomeIcon icon={faSearch} color={'rgb(204, 0, 0)'} ></FontAwesomeIcon></div>
-                    </div>
-                    <div className='header-secondary-select'>
-                        <div>FAQ</div>
-                    </div>
-                    <div className='header-secondary-select'>
-                        <div>Certified Used Vehicles</div>
-                    </div>
-                    <div className='header-secondary-select'>
-                        <div>Owners</div>
-                    </div>
-                    <div className='header-secondary-select'>
-                        <div>Español</div>
-                    </div>
-                    <div className='header-secondary-select'>
-                        <div>Your Location: 90210 <FontAwesomeIcon icon={faPencilAlt} color={'rgb(204, 0, 0)'} ></FontAwesomeIcon></div>
+                <div className='header-secondary-wrapper'>
+                    <div className='header-secondary'>
+                        <div className='header-secondary-select'>
+                            <div>Search <FontAwesomeIcon icon={faSearch} color={'rgb(204, 0, 0)'} ></FontAwesomeIcon></div>
+                        </div>
+                        <div className='header-secondary-select'>
+                            <div>FAQ</div>
+                        </div>
+                        <div className='header-secondary-select'>
+                            <div>Certified Used Vehicles</div>
+                        </div>
+                        <div className='header-secondary-select'>
+                            <div>Owners</div>
+                        </div>
+                        <div className='header-secondary-select'>
+                            <div>Español</div>
+                        </div>
+                        <div className='header-secondary-select last'>
+                            <div>Your Location: 90210 <FontAwesomeIcon icon={faPencilAlt} color={'rgb(204, 0, 0)'} ></FontAwesomeIcon></div>
+                        </div>
                     </div>
                 </div>
             }
@@ -107,12 +112,11 @@ function Header(){
 
             {deskNav && 
                 <div className='header-nav-two'>
-                    <div className='header-nav-two-select'>
+                    <div className='header-nav-two-select' onClick={()=>setOpenSelect(!openSelect)}>
                         <div>Select Tools</div>
                         <FontAwesomeIcon icon={faChevronDown} color={'rgb(204, 0, 0)'} ></FontAwesomeIcon>
-
                     </div>
-                    <div className='header-nav-two-select'>
+                    <div className='header-nav-two-select' onClick={()=>setOpenShop(!openShop)}>
                         <div>Shopping Tools</div>
                         <FontAwesomeIcon icon={faChevronDown} color={'rgb(204, 0, 0)'} ></FontAwesomeIcon>
                     </div>
@@ -128,6 +132,14 @@ function Header(){
                         </div>
                     </div>
                 </div>
+            }
+
+            {deskNav && 
+                <Collapse in={openShop} timeout={400} className='menu-open-shop'>
+                        <div className='shoptab-wrapper'>
+                            <ShopTab />
+                        </div>
+                </Collapse>
             }
 
             {mobNav && 
@@ -154,10 +166,6 @@ function Header(){
                     </Carousel>
                 </Collapse>
             }
-
-            {/* {deskNav && <Collapse>
-            
-            </Collapse>} */}
 
         </div>
     );

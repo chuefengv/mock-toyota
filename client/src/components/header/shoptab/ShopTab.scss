@@ -1,0 +1,84 @@
+.shoptab-wrapper{
+    height: 400px;
+    background-color: rgb(245,245,245);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    width: 100vw;
+}
+
+.shoptab-icons-wrapper{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border-right: rgb(217, 217, 217) solid 1px;
+    .shoptab-option{
+        font-size: 1em;
+        display: grid;
+        cursor: pointer;
+        
+        &.one{
+            margin: 10px 0 10px 0;
+            justify-self: center;  
+        }
+        &.two{
+            margin: 10px 20px 10px 0;
+            justify-self: center;  
+        }
+        &.three{
+            margin: 10px 0 10px 0;
+            justify-self: center;  
+        }
+        &.four{
+            margin: 10px 20px 10px 0;
+            justify-self: center;  
+        }
+    }
+
+    .shoptab-icon{
+        transition: ease-in .1s;
+
+        &.one{
+            font-size: 2.5em;
+            justify-self: center;  
+        }
+        &.two{
+            font-size: 2.5em;
+            justify-self: center;    
+        }
+        &.three{
+            font-size: 2.5em;
+            justify-self: center;   
+        }
+        &.four{
+            font-size: 2.5em;
+            justify-self: center;   
+        }
+
+        &:hover{
+            scale: 1.2;
+            transition: ease-out .1s;
+            color: rgb(140,26,17);
+        }
+    }
+}
+
+.shoptab-links-wrapper{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    font-size: .9em;
+    max-width: 500px;
+    .shoptab-links-option{
+        align-self: center;
+        padding-left: 30px;
+
+        &:hover{
+            color: rgb(240,0,0);
+        }
+    }
+}

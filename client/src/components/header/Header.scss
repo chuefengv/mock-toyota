@@ -82,21 +82,33 @@ $red : rgb(235, 10, 30);
     .header-wrapper{
         grid-template-columns: auto auto auto 1fr;
         grid-template-rows: auto 10px 40px 10px;
+        position: relative;
+
+        .header-secondary-wrapper{
+            grid-column: 1/5;
+            grid-row: 1/2;
+            background-color: rgb(245,245,245);
+            display: grid;
+            justify-content: center;
+            border-bottom: rgb(217, 217, 217) solid 1px;
+        }
         .header-secondary{
             display: flex;
             flex-direction: row;
-            grid-column: 1/5;
-            grid-row: 1/2;
             justify-content: flex-end;
-            background-color: rgb(245,245,245);
             color: rgb(89, 89, 91);
             padding: 10px 0 10px 0;
-            border-bottom: rgb(217, 217, 217) solid 1px;
+            width: 100vw;
+            max-width: 950px;
             
             .header-secondary-select{
                 padding: 0 10px 0 10px;
                 font-size: .7em;
                 border-right: rgb(217, 217, 217) solid 1px;
+
+                &.last{
+                    border-right: none;
+                }
 
                 div{
                     cursor: pointer;
@@ -136,26 +148,43 @@ $red : rgb(235, 10, 30);
                 align-self: center;
                 display: flex;
                 color: rgb(89, 89, 91);
+                cursor: pointer;
+                &:hover{
+                    color: rgb(204, 0,0);
+                }
     
                 div{
                     padding: 0 5px 0 5px;
-                    cursor: pointer;
                 }
             }
     
             .header-nav-two-red{
-                background-color: rgb(204, 0, 0);
+                background-color: rgb(240, 0, 0);
                 color: white;
                 display: grid;
                 padding: 0 8px 0 8px;
                 font-size: .9em;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: rgb(140,26,17);
+                }
+
                 div{
                     align-self: center;
-                    cursor: pointer;
                 }
             }
     
         }
+    }
+
+    .menu-open-shop{
+        position: absolute;
+        z-index: 2;
+        top: 94px;
+        left: 0;
+        right: 0;
+        bottom: 0;
     }
 
 }
