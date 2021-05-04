@@ -10,7 +10,9 @@
 .cartab-car-types{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    border: solid blue;
+    width: 100vw;
+    max-width: 950px;
+    justify-self: center;
 }
 
 .cartab-car-types-option{
@@ -26,8 +28,10 @@
         border-right: rgb(217, 217, 217) solid 1px;
     }
 
-    &.five{
-        border-right: none;
+    &.one{
+        p{
+            border-left: rgb(217, 217, 217) solid 1px;
+        }
     }
 
     &.selected:after{

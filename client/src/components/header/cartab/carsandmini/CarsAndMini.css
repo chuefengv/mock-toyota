@@ -1,0 +1,18 @@
+.cam-wrapper {
+  padding: 25px 0 25px 0;
+  display: -ms-grid;
+  display: grid;
+}
+
+.cam-car-display {
+  border: solid blue;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 100%;
+  max-width: 950px;
+}
+/*# sourceMappingURL=CarsAndMini.css.map */

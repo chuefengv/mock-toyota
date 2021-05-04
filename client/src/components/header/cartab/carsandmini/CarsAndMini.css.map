@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAA;EACR,OAAO,EAAE,aAAa;EACtB,OAAO,EAAE,IAAI;CAChB;;AAED,AAAA,gBAAgB,CAAA;EACZ,MAAM,EAAE,UAAU;EAClB,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,cAAc;EACrC,YAAY,EAAE,MAAM;EACpB,KAAK,EAAE,IAAI;EACX,SAAS,EAAE,KAAK;CACnB",
+    "sources": [
+        "CarsAndMini.scss"
+    ],
+    "names": [],
+    "file": "CarsAndMini.css"
+}

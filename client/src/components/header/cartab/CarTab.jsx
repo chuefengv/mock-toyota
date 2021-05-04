@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import './CarTab.css';
+import { Carousel } from 'react-responsive-carousel';
+import CarsAndMini from './carsandmini/CarsAndMini'
 
 function CarTab(){
 
@@ -24,6 +26,14 @@ function CarTab(){
                     <p>Upcoming Vehicles</p>
                 </div>
            </div>
+
+           <Carousel selectedItem={index} showArrows={false} showIndicators={false} showThumbs={false} showStatus={false} infiniteLoop={true}>
+                <CarsAndMini />
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+            </Carousel>
         </div>
     )
 }
