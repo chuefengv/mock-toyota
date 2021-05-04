@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css';
 import ShopTab from './shoptab/ShopTab';
+import CarTab from './cartab/CarTab';
 import toyota from '../../assets/toyota.svg';
 import olympic from '../../assets/olympic.svg'
 import paralympic from '../../assets/paralympic.svg'
@@ -20,6 +21,7 @@ import { Carousel } from 'react-responsive-carousel';
 function Header(){
 
     const [openMenu, setOpenMenu] = useState(false);
+    const [openCars, setOpenCars] = useState(false);
     const [openSelect, setOpenSelect] = useState(false);
     const [openShop, setOpenShop] = useState(false);
     const [index, setIndex] = useState(0);
@@ -43,6 +45,25 @@ function Header(){
         window.scrollTo(0,0);
     }
 
+    function openCarsMenu(){
+        if(openSelect === true){
+            setOpenSelect(false);
+            setTimeout(function(){setOpenCars(!openCars)}, 400);
+        }else{
+            setOpenCars(!openCars);
+        }
+    }
+
+    function openSelectMenu(){
+        if(openCars === true){
+            setOpenCars(false);
+            setTimeout(function(){setOpenSelect(!openSelect)}, 400);
+        }else{
+            setOpenSelect(!openSelect);
+        }
+
+    }
+
     useEffect(()=>{
         function renderNav(){
             if(window.innerWidth>=837){
@@ -54,6 +75,8 @@ function Header(){
                 setDeskNav(false);
                 setMobNav(true);
                 setToyotaLogo(false);
+                setOpenShop(false);
+                setOpenCars(false);
             }
         }
 
@@ -112,11 +135,11 @@ function Header(){
 
             {deskNav && 
                 <div className='header-nav-two'>
-                    <div className='header-nav-two-select' onClick={()=>setOpenSelect(!openSelect)}>
-                        <div>Select Tools</div>
+                    <div className='header-nav-two-select' onClick={()=>openCarsMenu()}>
+                        <div>Select Vehicles</div>
                         <FontAwesomeIcon icon={faChevronDown} color={'rgb(204, 0, 0)'} ></FontAwesomeIcon>
                     </div>
-                    <div className='header-nav-two-select' onClick={()=>setOpenShop(!openShop)}>
+                    <div className='header-nav-two-select' onClick={()=>openSelectMenu()}>
                         <div>Shopping Tools</div>
                         <FontAwesomeIcon icon={faChevronDown} color={'rgb(204, 0, 0)'} ></FontAwesomeIcon>
                     </div>
@@ -135,10 +158,14 @@ function Header(){
             }
 
             {deskNav && 
-                <Collapse in={openShop} timeout={400} className='menu-open-shop'>
-                        <div className='shoptab-wrapper'>
-                            <ShopTab />
-                        </div>
+                <Collapse in={openSelect} timeout={400} className='menu-open-shop'>
+                    <ShopTab />
+                </Collapse>
+            }
+
+            {deskNav && 
+                <Collapse in={openCars} timeout={400} className='menu-open-cars'>
+                   <CarTab />
                 </Collapse>
             }
 

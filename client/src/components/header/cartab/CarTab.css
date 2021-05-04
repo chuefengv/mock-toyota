@@ -1,0 +1,33 @@
+.cartab-wrapper {
+  height: 600px;
+  background-color: whitesmoke;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto 1fr;
+      grid-template-rows: auto 1fr;
+  width: 100vw;
+}
+
+.cartab-car-types {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin: 20px 0 20px 0;
+}
+
+.cartab-car-types-option {
+  border-right: #d9d9d9 solid 1px;
+  color: #59595b;
+  width: 100%;
+  text-align: center;
+  font-size: .9em;
+  cursor: pointer;
+}
+
+.cartab-car-types-option.five {
+  border-right: none;
+}
+/*# sourceMappingURL=CarTab.css.map */
