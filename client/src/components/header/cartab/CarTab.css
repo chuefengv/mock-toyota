@@ -15,19 +15,51 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  margin: 20px 0 20px 0;
+  border: solid blue;
 }
 
 .cartab-car-types-option {
-  border-right: #d9d9d9 solid 1px;
   color: #59595b;
   width: 100%;
   text-align: center;
   font-size: .9em;
   cursor: pointer;
+  padding: 20px 0 0 0;
+}
+
+.cartab-car-types-option p {
+  margin: 0;
+  border-right: #d9d9d9 solid 1px;
 }
 
 .cartab-car-types-option.five {
   border-right: none;
+}
+
+.cartab-car-types-option.selected:after {
+  display: block;
+  content: '';
+  border-bottom: solid 2px #cc0000;
+  padding: 0 0 20px 0;
+}
+
+.cartab-car-types-option.unselected::after {
+  display: block;
+  content: '';
+  border-bottom: solid 2px #cc0000;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 175ms ease-in-out;
+  transition: -webkit-transform 175ms ease-in-out;
+  transition: transform 175ms ease-in-out;
+  transition: transform 175ms ease-in-out, -webkit-transform 175ms ease-in-out;
+  padding: 0 0 20px 0;
+}
+
+.cartab-car-types-option.unselected:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  padding: 0 0 20px 0;
+  border-bottom: solid 2px #cc0000;
 }
 /*# sourceMappingURL=CarTab.css.map */

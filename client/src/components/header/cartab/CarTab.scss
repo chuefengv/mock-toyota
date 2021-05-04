@@ -10,18 +10,47 @@
 .cartab-car-types{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    margin: 20px 0 20px 0;
-
+    border: solid blue;
 }
 
 .cartab-car-types-option{
-    border-right: rgb(217, 217, 217) solid 1px;
     color: rgb(89, 89, 91);
     width: 100%;
     text-align: center;
     font-size: .9em;
     cursor: pointer;
+    padding: 20px 0 0 0;
+
+    p{
+        margin: 0;
+        border-right: rgb(217, 217, 217) solid 1px;
+    }
+
     &.five{
         border-right: none;
     }
+
+    &.selected:after{
+        display:block;
+        content: '';
+        border-bottom: solid 2px rgb(204,0,0);  
+        padding: 0 0 20px 0;
+    }
+
+    &.unselected::after{
+        display:block;
+        content: '';
+        border-bottom: solid 2px rgb(204,0,0);  
+        transform: scaleX(0);  
+        transition: transform 175ms ease-in-out;
+        padding: 0 0 20px 0;
+    }
+
+    &.unselected:hover:after{
+        transform: scaleX(1);
+        padding: 0 0 20px 0;
+        border-bottom: solid 2px rgb(204,0,0);  
+    }
 }
+
+
