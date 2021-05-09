@@ -15,4 +15,24 @@
   width: 100%;
   max-width: 950px;
 }
+
+.cam-car-option-wrapper {
+  text-align: start;
+  border: solid green 1px;
+  margin: 0 0 20px 0;
+}
+
+.cam-car-option-name {
+  font-weight: bold;
+  font-size: .9em;
+  max-width: 150px;
+}
+
+.cam-car-option-price {
+  font-size: .85em;
+}
+
+.cam-car-option-mpg {
+  font-size: .85em;
+}
 /*# sourceMappingURL=CarsAndMini.css.map */

@@ -26,6 +26,14 @@ app.get('/api/cars', async(req, res)=>{
         console.log(err.message)
     }
 })
+app.get('/api/cars/img', async(req, res)=>{
+    try{
+        const getCars = await pool.query("SELECT id, name, price, mpg FROM cars WHERE id in (18, 17, 8, 10, 9, 6, 7, 3, 4, 16, 2, 12, 23)");
+        res.json(getCars.rows)
+    }catch(err){
+        console.log(err.message)
+    }
+})
 
 app.get('/api/trucks', async(req, res)=>{
     try{
@@ -53,6 +61,8 @@ app.get('/api/hybrids', async(req, res)=>{
         console.log(err.message)
     }
 })
+
+
 
 // app.get('*', (req, res) => {
 //   res.sendFile(path.join(__dirname, '/client/build/index.html'));
