@@ -23,7 +23,6 @@ function Header(){
     const [openMenu, setOpenMenu] = useState(false);
     const [openCars, setOpenCars] = useState(false);
     const [openSelect, setOpenSelect] = useState(false);
-    const [openShop, setOpenShop] = useState(false);
     const [index, setIndex] = useState(0);
     const [deskNav, setDeskNav] = useState((window.innerWidth>=837) ? true : false);
     const [mobNav, setMobNav] = useState((window.innerWidth<837) ? true: false);
@@ -75,7 +74,6 @@ function Header(){
                 setDeskNav(false);
                 setMobNav(true);
                 setToyotaLogo(false);
-                setOpenShop(false);
                 setOpenCars(false);
             }
         }

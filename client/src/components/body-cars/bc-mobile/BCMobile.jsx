@@ -53,17 +53,17 @@ const Accordion = withStyles({
 
 function BCMobile(){
 
-    const [expanded, setExpanded] = React.useState('panel1');
+    // const [expanded, setExpanded] = React.useState('panel1');
 
-    const handleChange = (panel) => (event, newExpanded) => {
-      setExpanded(newExpanded ? panel : false);
-    };
+    // const handleChange = (panel) => (event, newExpanded) => {
+    //   setExpanded(newExpanded ? panel : false);
+    // };
 
     return(
         <div className='bcmobile-wrapper'>
 
             <div className='bcmobile-dropdown'>
-                <Accordion square onChange={handleChange('panel1')}>
+                <Accordion square>
                     <AccordionSummary expandIcon={<ExpandMoreIcon className='arrow'/>}>
                         <div className='bcmobile-summary'>
                             <div>Cars & Minivans</div>
@@ -77,7 +77,7 @@ function BCMobile(){
             </div>
 
             <div className='bcmobile-dropdown'>
-                <Accordion square onChange={handleChange('panel1')}>
+                <Accordion square >
                     <AccordionSummary expandIcon={<ExpandMoreIcon className='arrow'/>}>
                         <div className='bcmobile-summary'>
                             <div>Trucks</div>
@@ -91,7 +91,7 @@ function BCMobile(){
             </div>
 
             <div className='bcmobile-dropdown'>
-                <Accordion square onChange={handleChange('panel1')}>
+                <Accordion square >
                     <AccordionSummary expandIcon={<ExpandMoreIcon className='arrow'/>}>
                         <div className='bcmobile-summary'>
                             <div>Crossovers & SUVs</div>
@@ -105,7 +105,7 @@ function BCMobile(){
             </div>
 
             <div className='bcmobile-dropdown'>
-                <Accordion square onChange={handleChange('panel1')}>
+                <Accordion square >
                     <AccordionSummary expandIcon={<ExpandMoreIcon className='arrow'/>}>
                         <div className='bcmobile-summary'>
                             <div>Hybrid & Fuel Cell</div>
@@ -119,7 +119,7 @@ function BCMobile(){
             </div>
 
             <div className='bcmobile-dropdown'>
-                <Accordion square onChange={handleChange('panel1')}>
+                <Accordion square >
                     <AccordionSummary expandIcon={<ExpandMoreIcon className='arrow'/>}>
                         <div className='bcmobile-summary'>
                             <div>Upcoming Vehicles</div>

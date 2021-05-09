@@ -36,7 +36,7 @@ function Hero(){
                         </div>
                         <div className='hero-slider-description'>
 
-                            <div class='hero-slider-1 second'>
+                            <div className='hero-slider-1 second'>
                                 Prototype shown with options
                             </div>
 
@@ -68,7 +68,7 @@ function Hero(){
                         </div>
                         <div className='hero-slider-description'>
 
-                            <div class='hero-slider-1 first'>
+                            <div className='hero-slider-1 first'>
                                 Options shown
                             </div>
 
@@ -99,7 +99,7 @@ function Hero(){
                         </div>
                         <div className='hero-slider-description'>
 
-                            <div class='hero-slider-1 third'>
+                            <div className='hero-slider-1 third'>
                                 Options shown
                             </div>
 
@@ -130,7 +130,7 @@ function Hero(){
                         </div>
                         <div className='hero-slider-description'>
 
-                            <div class='hero-slider-1 fourth'>
+                            <div className='hero-slider-1 fourth'>
                                 Prototype vehicle shown with options using visual effects
                             </div>
 
@@ -157,7 +157,7 @@ function Hero(){
                         </div>
                         <div className='hero-slider-description'>
 
-                            <div class='hero-slider-1 fifth'>
+                            <div className='hero-slider-1 fifth'>
                                 Heritage Edition shown in Midnight Black Metallic with yakima MegaWarrior cargo basket
                             </div>
 

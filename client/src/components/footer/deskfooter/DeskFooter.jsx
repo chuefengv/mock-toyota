@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './DeskFooter.css';
 import DeskLinks from './desklinks/DeskLinks';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -11,7 +11,7 @@ import toyota_big from '../../../assets/toyota_big.svg'
 
 function DeskFooter(){
 
-    const [clickedSearch, setClickedSearch] = useState('false');
+    // const [clickedSearch, setClickedSearch] = useState('false');
 
     return(
         <div className='df-wrapper'>
