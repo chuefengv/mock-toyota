@@ -5,11 +5,12 @@
 }
 
 .cam-car-display {
-  border: solid blue;
+  background-color: white;
+  padding: 20px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   -ms-grid-column-align: center;
       justify-self: center;
   width: 100%;
@@ -18,8 +19,16 @@
 
 .cam-car-option-wrapper {
   text-align: start;
-  border: solid green 1px;
   margin: 0 0 20px 0;
+  cursor: pointer;
+}
+
+.cam-car-option-wrapper:hover .cam-car-option-name {
+  color: #f00000;
+}
+
+.cam-car-option-image {
+  height: 100px;
 }
 
 .cam-car-option-name {

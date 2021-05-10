@@ -4,9 +4,10 @@
 }
 
 .cam-car-display{
-    border: solid blue;
+    background-color: rgb(255,255,255);
+    padding: 20px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-self: center;
     width: 100%;
     max-width: 950px;
@@ -14,8 +15,22 @@
 
 .cam-car-option-wrapper{
     text-align: start;
-    border: solid green 1px;
+    // border: solid green 1px;
     margin: 0 0 20px 0;
+    cursor: pointer;
+
+    &:hover{
+        .cam-car-option-name{
+            color: rgb(240,0,0);
+        }
+    }
+}
+
+.cam-car-option-image{
+    height: 100px;
+    img{
+        // height: 80px;
+    }
 }
 
 .cam-car-option-name{

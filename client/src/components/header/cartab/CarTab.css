@@ -1,5 +1,5 @@
 .cartab-wrapper {
-  height: 600px;
+  height: 900px;
   background-color: whitesmoke;
   display: -ms-grid;
   display: grid;
@@ -64,5 +64,11 @@
           transform: scaleX(1);
   padding: 0 0 20px 0;
   border-bottom: solid 2px #cc0000;
+}
+
+.cartab-carousel {
+  max-width: 950px;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 /*# sourceMappingURL=CarTab.css.map */

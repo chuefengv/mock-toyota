@@ -1,7 +1,10 @@
 import React, {useState} from 'react';
 import './CarTab.css';
 import { Carousel } from 'react-responsive-carousel';
-import CarsAndMini from './carsandmini/CarsAndMini'
+import CarsAndMini from './carsandmini/CarsAndMini';
+import Trucks from './trucks/Trucks';
+import Hyrbid from './hybrid/Hyrbid';
+import Crossoverandsuv from './crossandsuv/Crossandsuv';
 
 function CarTab(){
 
@@ -27,11 +30,15 @@ function CarTab(){
                 </div>
            </div>
 
-           <Carousel selectedItem={index} showArrows={false} showIndicators={false} showThumbs={false} showStatus={false} infiniteLoop={true}>
+           <Carousel selectedItem={index} showArrows={false} showIndicators={false} showThumbs={false} showStatus={false} infiniteLoop={true} className='cartab-carousel'>
                 <CarsAndMini />
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
+
+                <Trucks />
+
+                <Crossoverandsuv />
+
+                <Hyrbid />
+
                 <div>5</div>
             </Carousel>
         </div>

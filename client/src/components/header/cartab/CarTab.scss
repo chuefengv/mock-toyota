@@ -1,5 +1,5 @@
 .cartab-wrapper{
-    height: 600px;
+    height: 900px;
     background-color: rgb(245,245,245);
     display: grid;
     grid-template-columns: 1fr;
@@ -57,4 +57,7 @@
     }
 }
 
-
+.cartab-carousel{
+    max-width: 950px;
+    justify-self: center;
+}
