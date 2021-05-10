@@ -19,7 +19,7 @@ function CarsAndMini(){
                 {carAndMini.map((car)=>{
                     return (
                     <div key={car.id} className='cam-car-option-wrapper'>
-                        <div className='cam-car-option-image'>PICTURE HERE</div>
+                        <div className='cam-car-option-image'><img src={car.link} alt=''></img></div>
                         <div className='cam-car-option-name'>{car.name}</div>
                         <div className='cam-car-option-price'>{car.price} starting</div>
                         <div className='cam-car-option-mpg'>{car.mpg} est MPG</div>
