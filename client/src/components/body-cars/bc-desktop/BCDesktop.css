@@ -13,6 +13,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 0 30px 0;
 }
 
 .bcdesktop-categories-wrapper {
@@ -25,5 +26,14 @@
   padding: 0 10px 0 10px;
   cursor: pointer;
   color: #59595b;
+}
+
+.bcdesktop-categories-option-selected {
+  color: black;
+}
+
+.bcdesktop-categories-car-wrapper {
+  display: -ms-grid;
+  display: grid;
 }
 /*# sourceMappingURL=BCDesktop.css.map */

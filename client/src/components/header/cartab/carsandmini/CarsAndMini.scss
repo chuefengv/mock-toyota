@@ -7,10 +7,14 @@
     background-color: rgb(255,255,255);
     padding: 20px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     justify-self: center;
     width: 100%;
     max-width: 950px;
+
+    &.more{
+        background-color: rgb(245,245,245);
+    }
 }
 
 .cam-car-option-wrapper{
@@ -22,6 +26,16 @@
     &:hover{
         .cam-car-option-name{
             color: rgb(240,0,0);
+        }
+        .cam-car-option-more{
+            color: rgb(240,0,0);
+
+            &::after{
+                content: '\00000a VIEW MORE INFO >';
+                font-size: .8em;
+                font-weight: lighter;
+                white-space: pre;
+            }
         }
     }
 }
@@ -45,4 +59,9 @@
 
 .cam-car-option-mpg{
     font-size: .85em;
+}
+
+.cam-car-option-more{
+    font-weight: bold;
+
 }

@@ -5,6 +5,7 @@ import CarsAndMini from './carsandmini/CarsAndMini';
 import Trucks from './trucks/Trucks';
 import Hyrbid from './hybrid/Hyrbid';
 import Crossoverandsuv from './crossandsuv/Crossandsuv';
+import MoreCars from './morecars/MoreCars';
 
 function CarTab(){
 
@@ -39,7 +40,7 @@ function CarTab(){
 
                 <Hyrbid />
 
-                <div>5</div>
+                <MoreCars />
             </Carousel>
         </div>
     )

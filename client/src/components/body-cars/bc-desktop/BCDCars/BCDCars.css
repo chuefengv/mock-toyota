@@ -1,0 +1,78 @@
+.bcd-car-display-wrapper {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[13];
+      grid-template-columns: repeat(13, auto);
+  width: 90vw;
+  overflow-y: auto;
+}
+
+.bcd-car-display-wrapper.more {
+  background-color: whitesmoke;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.bcd-car-option-more-one {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.bcd-car-option-more-one:hover .bcd-car-option-more::after {
+  content: '\00000a VIEW MORE INFO >';
+  font-size: .8em;
+  font-weight: lighter;
+  white-space: pre;
+  color: #f00000;
+}
+
+.bcd-car-option-more-two {
+  justify-self: baseline;
+}
+
+.bcd-car-option-more-two:hover .bcd-car-option-more::after {
+  content: '\00000a VIEW MORE INFO >';
+  font-size: .8em;
+  font-weight: lighter;
+  white-space: pre;
+  color: #f00000;
+}
+
+.bcd-car-option-more {
+  height: 40px;
+}
+
+.bcd-car-option-wrapper {
+  padding: 30px 0 0 0;
+  display: -ms-grid;
+  display: grid;
+}
+
+.bcd-car-option-wrapper.more {
+  margin: 0 0 20px 20px;
+}
+
+.bcd-car-option-image {
+  cursor: pointer;
+}
+
+.bcd-car-option-image img {
+  height: 80px;
+  width: auto;
+}
+
+.bcd-car-option-name {
+  font-weight: bold;
+}
+
+.bcd-car-option-price {
+  margin: 5px 0 0 0;
+  font-size: .9em;
+}
+
+.bcd-car-option-mpg {
+  font-size: .9em;
+}
+/*# sourceMappingURL=BCDCars.css.map */

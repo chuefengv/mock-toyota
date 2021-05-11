@@ -9,12 +9,16 @@
   padding: 20px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
   -ms-grid-column-align: center;
       justify-self: center;
   width: 100%;
   max-width: 950px;
+}
+
+.cam-car-display.more {
+  background-color: whitesmoke;
 }
 
 .cam-car-option-wrapper {
@@ -25,6 +29,17 @@
 
 .cam-car-option-wrapper:hover .cam-car-option-name {
   color: #f00000;
+}
+
+.cam-car-option-wrapper:hover .cam-car-option-more {
+  color: #f00000;
+}
+
+.cam-car-option-wrapper:hover .cam-car-option-more::after {
+  content: '\00000a VIEW MORE INFO >';
+  font-size: .8em;
+  font-weight: lighter;
+  white-space: pre;
 }
 
 .cam-car-option-image {
@@ -43,5 +58,9 @@
 
 .cam-car-option-mpg {
   font-size: .85em;
+}
+
+.cam-car-option-more {
+  font-weight: bold;
 }
 /*# sourceMappingURL=CarsAndMini.css.map */

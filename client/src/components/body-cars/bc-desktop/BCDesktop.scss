@@ -10,6 +10,7 @@
 .bcdesktop-categories{
     display: grid;
     justify-content: center;
+    margin: 0 0 30px 0;
 }
 
 .bcdesktop-categories-wrapper{
@@ -22,3 +23,12 @@
         color: rgb(89, 89, 91);
     }
 }
+
+.bcdesktop-categories-option-selected{
+    color: rgb(0,0,0);
+}
+
+.bcdesktop-categories-car-wrapper{
+    display: grid;
+}
+
