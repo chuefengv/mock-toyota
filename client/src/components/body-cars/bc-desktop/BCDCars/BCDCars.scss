@@ -47,6 +47,7 @@
 }
 
 .bcd-car-option-wrapper{
+    animation: fade .5s ease-in;
     padding: 30px 0 0 0;
     display: grid;
 
@@ -73,4 +74,10 @@
 }
 .bcd-car-option-mpg{
     font-size: .9em;
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
 }

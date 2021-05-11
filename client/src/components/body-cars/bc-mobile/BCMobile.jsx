@@ -5,6 +5,11 @@ import MuiAccordion from '@material-ui/core/Accordion';
 import MuiAccordionDetails from '@material-ui/core/AccordionDetails';
 import MuiAccordionSummary from '@material-ui/core/AccordionSummary';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import CarsAndMinivan from '../bc-desktop/BCDCars/CarsAndMinivan';
+import Trucks from '../bc-desktop/BCDCars/Trucks';
+import CrossAndSuvs from '../bc-desktop/BCDCars/CrossAndSuvs';
+import Hybrids from '../bc-desktop/BCDCars/Hybrids';
+import Upcoming from '../bc-desktop/BCDCars/Upcoming';
 
 const Accordion = withStyles({
     root: {
@@ -46,6 +51,7 @@ const Accordion = withStyles({
   const AccordionDetails = withStyles((theme) => ({
     root: {
       backgroundColor: 'white',
+      color: 'black',
       padding: theme.spacing(2),
     },
   }))(MuiAccordionDetails);
@@ -71,7 +77,7 @@ function BCMobile(){
 
                     </AccordionSummary>
                     <AccordionDetails>
-                        <div className='bcmobile-details'>Hello</div>
+                        <CarsAndMinivan />
                     </AccordionDetails>
                 </Accordion>
             </div>
@@ -85,7 +91,7 @@ function BCMobile(){
 
                     </AccordionSummary>
                     <AccordionDetails>
-                        <div className='bcmobile-details'>Hello</div>
+                        <Trucks />
                     </AccordionDetails>
                 </Accordion>
             </div>
@@ -99,7 +105,7 @@ function BCMobile(){
 
                     </AccordionSummary>
                     <AccordionDetails>
-                        <div className='bcmobile-details'>Hello</div>
+                        <CrossAndSuvs />
                     </AccordionDetails>
                 </Accordion>
             </div>
@@ -113,7 +119,7 @@ function BCMobile(){
 
                     </AccordionSummary>
                     <AccordionDetails>
-                        <div className='bcmobile-details'>Hello</div>
+                        <Hybrids />
                     </AccordionDetails>
                 </Accordion>
             </div>
@@ -127,7 +133,7 @@ function BCMobile(){
 
                     </AccordionSummary>
                     <AccordionDetails>
-                        <div className='bcmobile-details'>Hello</div>
+                        <Upcoming />
                     </AccordionDetails>
                 </Accordion>
             </div>

@@ -1,4 +1,6 @@
 .option-wrapper {
+  -webkit-animation: fade .5s ease-in;
+          animation: fade .5s ease-in;
   display: -ms-grid;
   display: grid;
 }
@@ -116,6 +118,18 @@
     margin: 20px 0 10px 0;
     color: #cc0000;
     cursor: pointer;
+  }
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
   }
 }
 /*# sourceMappingURL=OptionOne.css.map */
