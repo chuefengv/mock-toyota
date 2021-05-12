@@ -27,6 +27,7 @@ function Header(){
     const [deskNav, setDeskNav] = useState((window.innerWidth>=837) ? true : false);
     const [mobNav, setMobNav] = useState((window.innerWidth<837) ? true: false);
     const [toyotaLogo, setToyotaLogo] = useState((window.innerWidth>=837) ? true : false);
+    
     const [menu01, setMenu01] = useState(false);
     const [menu02, setMenu02] = useState(false);
     const [menu03, setMenu03] = useState(false);

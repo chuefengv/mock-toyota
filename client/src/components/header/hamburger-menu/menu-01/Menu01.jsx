@@ -50,15 +50,9 @@ function Menu01({setIndex}){
             </div>
             <div className='nav-choices'>
                 <div>Special Edition</div>
-                <div className='nav-choices-arrow'>
-                    <FontAwesomeIcon icon={faChevronRight} color={'rgb(204, 0, 0)'} ></FontAwesomeIcon>
-                </div>
             </div>
             <div className='nav-choices'>
                 <div>All Vehicles</div>
-                <div className='nav-choices-arrow'>
-                    <FontAwesomeIcon icon={faChevronRight} color={'rgb(204, 0, 0)'} ></FontAwesomeIcon>
-                </div>
             </div>
         </div>
     )

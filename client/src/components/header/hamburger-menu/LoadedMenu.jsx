@@ -10,9 +10,13 @@ function MenuOne({setIndex, menu01, menu02, menu03, menu04}){
 
     return(
             <div>
+                {/* Vehicles */}
                 {menu01 && <Menu01 setIndex={setIndex} />}
+                {/* Shoppings Tools */}
                 {menu02 && <Menu02 setIndex={setIndex} />}
+                {/* Helpful Links */}
                 {menu03 && <Menu03 setIndex={setIndex} />}
+                {/* Owners */}
                 {menu04 && <Menu04 setIndex={setIndex} />}
             </div>
     )
