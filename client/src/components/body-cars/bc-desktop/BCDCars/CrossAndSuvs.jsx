@@ -7,7 +7,7 @@ function CrossAndSuvs(){
     const [carsAndMinivan, setCarsAndMinivan] = useState([]);
 
     useEffect(()=>{
-        Axios.get('http://localhost:5000/api/suvs')
+        Axios.get('/api/suvs')
         .then(response=>{
             setCarsAndMinivan(response.data)
         },[])

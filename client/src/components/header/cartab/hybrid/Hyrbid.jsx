@@ -7,7 +7,7 @@ function Hybrid(){
     const [carAndMini, setCarAndMini] = useState([]);
 
     useEffect(()=>{
-        Axios.get('http://localhost:5000/api/hybrids')
+        Axios.get('/api/hybrids')
         .then(response=>{
             setCarAndMini(response.data)
         },[])

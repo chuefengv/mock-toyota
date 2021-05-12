@@ -7,7 +7,7 @@ function CarsAndMinivan(){
     const [carsAndMinivan, setCarsAndMinivan] = useState([]);
 
     useEffect(()=>{
-        Axios.get('http://localhost:5000/api/cars')
+        Axios.get('/api/cars')
         .then(response=>{
             setCarsAndMinivan(response.data)
         },[])
