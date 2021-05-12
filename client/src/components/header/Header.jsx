@@ -182,7 +182,7 @@ function Header(){
 
             {mobNav && 
                 <Collapse in={openMenu} timeout={400} className='menu'>
-                    <Carousel selectedItem={index} showArrows={false} showIndicators={false} showThumbs={false} showStatus={false}>
+                    <Carousel selectedItem={index} showArrows={false} showIndicators={false} showThumbs={false} showStatus={false} emulateTouch={false}>
                         <div>
                             <MenuOne setIndex={setIndex} setMenu01={setMenu01} setMenu02={setMenu02} setMenu03={setMenu03} setMenu04={setMenu04}/>
                         </div>

@@ -7,6 +7,7 @@
       grid-template-columns: repeat(13, auto);
   width: 90vw;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .bcd-car-display-wrapper.more {

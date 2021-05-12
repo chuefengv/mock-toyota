@@ -29,7 +29,7 @@ function Hero(){
         <div className='hero-wrapper'>
 
             <div className='hero-slider'>
-                <Carousel selectedItem={index} showArrows={false} showIndicators={false} showThumbs={false} showStatus={false} infiniteLoop={true}>
+                <Carousel selectedItem={index} showArrows={false} showIndicators={false} showThumbs={false} showStatus={false} infiniteLoop={true} emulateTouch={false}>
                     <div>
                         <div>
                             <img src={two} alt=''></img>
