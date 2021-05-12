@@ -1,6 +1,5 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import './BCDCars.css';
-import Axios from 'axios';
 import morecar from '../../../../assets/more-car.svg';
 import moreracing from '../../../../assets/more-racing.svg';
 
