@@ -20,7 +20,7 @@ pool.on('error', (err, client) => {
 //api route to GET city query from states database
 app.get('/api/cars', async(req, res)=>{
     try{
-        const getCars = await pool.query("SELECT cars.id, cars.name, cars.price, cars.mpg, images.link FROM cars INNER JOIN images ON cars.id=images.carid WHERE cars.id in (18, 17, 8, 10, 9, 6, 7, 3, 4, 16, 2, 12, 23) ORDER BY name");
+        const getCars = await pool.query("SELECT id, name, price, mpg, link FROM cars WHERE id in (18, 17, 8, 10, 9, 6, 7, 3, 4, 16, 2, 12, 23) ORDER BY name");
         res.json(getCars.rows)
     }catch(err){
         console.log(err.message)
@@ -29,7 +29,7 @@ app.get('/api/cars', async(req, res)=>{
 
 app.get('/api/trucks', async(req, res)=>{
     try{
-        const getCars = await pool.query("SELECT cars.id, cars.name, cars.price, cars.mpg, images.link FROM cars INNER JOIN images ON cars.id=images.carid WHERE cars.id in (24, 25)");
+        const getCars = await pool.query("SELECT id, name, price, mpg, link FROM cars WHERE id in (24, 25)");
         res.json(getCars.rows)
     }catch(err){
         console.log(err.message)
@@ -38,7 +38,7 @@ app.get('/api/trucks', async(req, res)=>{
 
 app.get('/api/suvs', async(req, res)=>{
     try{
-        const getCars = await pool.query("SELECT cars.id, cars.name, cars.price, cars.mpg, images.link FROM cars INNER JOIN images ON cars.id=images.carid WHERE cars.id in (5, 19, 20, 21, 26, 13, 14, 1, 22, 15)");
+        const getCars = await pool.query("SELECT id, name, price, mpg, link FROM cars WHERE id in (5, 19, 20, 21, 26, 13, 14, 1, 22, 15)");
         res.json(getCars.rows)
     }catch(err){
         console.log(err.message)
@@ -47,7 +47,7 @@ app.get('/api/suvs', async(req, res)=>{
 
 app.get('/api/hybrids', async(req, res)=>{
     try{
-        const getCars = await pool.query("SELECT cars.id, cars.name, cars.price, cars.mpg, images.link FROM cars INNER JOIN images ON cars.id=images.carid WHERE hybrid IS NOT NULL");
+        const getCars = await pool.query("SELECT id, name, price, mpg, link FROM cars WHERE hybrid IS NOT NULL");
         res.json(getCars.rows)
     }catch(err){
         console.log(err.message)
