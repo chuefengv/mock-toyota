@@ -7,7 +7,7 @@ function CrossoverAndSuv(){
     const [carAndMini, setCarAndMini] = useState([]);
 
     useEffect(()=>{
-        Axios.get('http://localhost:5000/api/suvs')
+        Axios.get('/api/suvs')
         .then(response=>{
             setCarAndMini(response.data)
         },[])

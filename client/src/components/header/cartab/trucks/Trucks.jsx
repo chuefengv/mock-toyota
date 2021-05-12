@@ -7,7 +7,7 @@ function Trucks(){
     const [carAndMini, setCarAndMini] = useState([]);
 
     useEffect(()=>{
-        Axios.get('http://localhost:5000/api/trucks')
+        Axios.get('/api/trucks')
         .then(response=>{
             setCarAndMini(response.data)
         },[])
