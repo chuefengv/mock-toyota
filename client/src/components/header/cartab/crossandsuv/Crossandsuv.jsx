@@ -10,7 +10,7 @@ function CrossoverAndSuv(){
         Axios.get('/api/suvs')
         .then(response=>{
             setCarAndMini(response.data)
-        },[])
+        },[carAndMini])
     })
 
     return(

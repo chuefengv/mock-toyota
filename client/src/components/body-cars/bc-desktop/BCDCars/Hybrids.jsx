@@ -10,7 +10,7 @@ function Hybrids(){
         Axios.get('/api/hybrids')
         .then(response=>{
             setCarsAndMinivan(response.data)
-        },[])
+        },[carsAndMinivan])
     })
 
     return(

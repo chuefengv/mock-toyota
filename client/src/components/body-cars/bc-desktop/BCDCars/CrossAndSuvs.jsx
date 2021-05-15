@@ -10,7 +10,7 @@ function CrossAndSuvs(){
         Axios.get('/api/suvs')
         .then(response=>{
             setCarsAndMinivan(response.data)
-        },[])
+        },[carsAndMinivan])
     })
 
     return(

@@ -10,7 +10,7 @@ function Trucks(){
         Axios.get('/api/trucks')
         .then(response=>{
             setCarAndMini(response.data)
-        },[])
+        },[carAndMini])
     })
 
     return(
